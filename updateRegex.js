@@ -261,7 +261,7 @@ const generateRegex = async (useCase) => {
 
 
 async function appendRegexFile(message) {
-    const repoPath = path.resolve('./gh-app/daily_code/regex-code')
+    const repoPath = path.resolve('./regex-code')
     const fileName = 'regex-util.js'
     fs.appendFileSync(path.join(repoPath, fileName), message);
 }
