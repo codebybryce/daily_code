@@ -1,9 +1,11 @@
 node_modules/
-./services*
+services/
 update.js
 ./updateRegex.js
 
-
+.vscode/
 dist/
 *.env
+
+./update.js
 

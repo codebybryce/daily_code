@@ -273,24 +273,24 @@ async function processItem(item, index) {
 }
 
 function delay(minutes) {
-    const ms = minutes * 1000;
+    const ms = minutes * 6000;
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
-async function handleCommit(message, time){
+function handleCommit(message, time){
     git.add('.')
-    .commit("Test Commit",{"--date":"2025-01-02T21:48:34.493Z"},(error => error && console.error(error)))
+    .commit(`Daily Update - ${message}`,{"--date":time},(error => error && console.error(error)))
     .push('origin', 'main', (error)=>error && console.error(error))
 }
 
 async function processWithDelay(arr, delayTimeMinutes) {
     for (let itemIndex = arr.length; itemIndex > 0; itemIndex--) {
         processItem(arr[itemIndex], itemIndex);
-
+        let ghDay = dayjs().subtract(itemIndex,'day').format();
+        handleCommit(arr[itemIndex],ghDay)
         await delay(delayTimeMinutes)
     }
 }
 
-//processWithDelay(useCases, 5)
+processWithDelay(useCases, 5)
 
-handleCommit()
