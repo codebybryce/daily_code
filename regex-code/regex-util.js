@@ -5,3 +5,4 @@ const screenplayRegex = { screenplayFormat: { description: "Matches screenplay f
 const aerospacePartNumberRegex = { aerospacePartNumber: { description: "Validates aerospace part numbers (format: 1234-ABCD-5678)", regex: /^[0-9]{4}-[A-Z]{4}-[0-9]{4}$/ } };
 const regexArray = [{ key: 'cryptoTicker', description: 'Extract cryptocurrency ticker symbols', regex: /(?<!\w)([A-Z]{2,6})(?!\w)/g }];
 const transactions = []; transactions.push({ transactionID: { description: "Financial transaction ID", regex: /[A-Z]{3}-\d{4}-[A-Z]{2}/ } });
+const flightNumberRegex = { flightNumber: { description: "Matches airline flight numbers (e.g., AA1234, DL5678)", regex: /^[A-Z]{2}\d{1,4}$/ } };
