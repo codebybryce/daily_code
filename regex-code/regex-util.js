@@ -9,3 +9,4 @@ const flightNumberRegex = { flightNumber: { description: "Matches airline flight
 const electionDistrictCodeValidator = { electionDistrictCode: { description: "Validates election district codes (2 letters followed by 3 digits)", regex: /^[A-Z]{2}\d{3}$/ } };
 const citationKeyRegex = { bibtexKey: { description: "Extract BibTeX citation keys", regex: /@\w+\{([^,]+),/ } };
 const references = [{ key: "references", description: "Find references in scientific papers", regex: /(?:\[(\d+)\]|\((\d+)\))/g }];
+const commentsRegex = { comments: { description: "Matches user-submitted comments", regex: /^.+$/ } };
