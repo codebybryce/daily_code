@@ -10,3 +10,4 @@ const electionDistrictCodeValidator = { electionDistrictCode: { description: "Va
 const citationKeyRegex = { bibtexKey: { description: "Extract BibTeX citation keys", regex: /@\w+\{([^,]+),/ } };
 const references = [{ key: "references", description: "Find references in scientific papers", regex: /(?:\[(\d+)\]|\((\d+)\))/g }];
 const commentsRegex = { comments: { description: "Matches user-submitted comments", regex: /^.+$/ } };
+const validations = []; validations.push({ decimalPrecision: { description: "Validates a number with up to 2 decimal places", regex: /^\d+(\.\d{1,2})?$/ } });
