@@ -11,3 +11,4 @@ const citationKeyRegex = { bibtexKey: { description: "Extract BibTeX citation ke
 const references = [{ key: "references", description: "Find references in scientific papers", regex: /(?:\[(\d+)\]|\((\d+)\))/g }];
 const commentsRegex = { comments: { description: "Matches user-submitted comments", regex: /^.+$/ } };
 const validations = []; validations.push({ decimalPrecision: { description: "Validates a number with up to 2 decimal places", regex: /^\d+(\.\d{1,2})?$/ } });
+const cityExtractor = { city: { description: "Extract city names from addresses", regex: /,\s*([^,]+)\s*\d{5}/ } };
