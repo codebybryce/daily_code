@@ -12,3 +12,4 @@ const references = [{ key: "references", description: "Find references in scient
 const commentsRegex = { comments: { description: "Matches user-submitted comments", regex: /^.+$/ } };
 const validations = []; validations.push({ decimalPrecision: { description: "Validates a number with up to 2 decimal places", regex: /^\d+(\.\d{1,2})?$/ } });
 const cityExtractor = { city: { description: "Extract city names from addresses", regex: /,\s*([^,]+)\s*\d{5}/ } };
+const unusedCSSRulesRegex = { unusedCSS: { description: "Find unused CSS rules", regex: /\.([a-zA-Z_][\w-]*)\s*\{/g } };
