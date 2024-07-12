@@ -15,3 +15,4 @@ const cityExtractor = { city: { description: "Extract city names from addresses"
 const unusedCSSRulesRegex = { unusedCSS: { description: "Find unused CSS rules", regex: /\.([a-zA-Z_][\w-]*)\s*\{/g } };
 const regexPatterns = []; regexPatterns.push({ directoryPath: { description: "Matches directory paths in system logs", regex: /(?:\/[^\/\0]+)+\/?/ } });
 const regexValidations = []; regexValidations.push({ titleValidation: { description: "Validates forum post titles: 5-100 characters, no special characters except hyphens and underscores", regex: /^[A-Za-z0-9][A-Za-z0-9-_ ]{4,95}[A-Za-z0-9]$/ } });
+const authorRegex = { authorExtract: { description: "Extract author names from papers", regex: /(?<=Author[s]?:?\s)(.*?)(?=\s*[\n\r]|$)/g } };
