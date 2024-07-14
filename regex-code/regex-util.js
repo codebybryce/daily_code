@@ -17,3 +17,4 @@ const regexPatterns = []; regexPatterns.push({ directoryPath: { description: "Ma
 const regexValidations = []; regexValidations.push({ titleValidation: { description: "Validates forum post titles: 5-100 characters, no special characters except hyphens and underscores", regex: /^[A-Za-z0-9][A-Za-z0-9-_ ]{4,95}[A-Za-z0-9]$/ } });
 const authorRegex = { authorExtract: { description: "Extract author names from papers", regex: /(?<=Author[s]?:?\s)(.*?)(?=\s*[\n\r]|$)/g } };
 const regexPatterns = [{ misplacedCommas: { description: "Find misplaced commas in lists", regex: /,(?=\s*,)/ } }];
+const regexArray = [{ key: 'leadingZeros', description: 'Match leading zeros in numbers', regex: /^0+/ }];
