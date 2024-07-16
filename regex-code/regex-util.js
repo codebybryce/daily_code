@@ -19,3 +19,4 @@ const authorRegex = { authorExtract: { description: "Extract author names from p
 const regexPatterns = [{ misplacedCommas: { description: "Find misplaced commas in lists", regex: /,(?=\s*,)/ } }];
 const regexArray = [{ key: 'leadingZeros', description: 'Match leading zeros in numbers', regex: /^0+/ }];
 const validations = [{ key: "whitespaceFormat", description: "Validates that there are no leading or trailing whitespaces and ensures single spaces between words", regex: /^\S(.*\S)?$/ }];
+const jsonPropertyNamesRegex = /"(\w+)":/g; const output = [{ key: { description: "Extract JSON property names", regex: jsonPropertyNamesRegex } }];
