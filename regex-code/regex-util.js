@@ -21,3 +21,4 @@ const regexArray = [{ key: 'leadingZeros', description: 'Match leading zeros in 
 const validations = [{ key: "whitespaceFormat", description: "Validates that there are no leading or trailing whitespaces and ensures single spaces between words", regex: /^\S(.*\S)?$/ }];
 const jsonPropertyNamesRegex = /"(\w+)":/g; const output = [{ key: { description: "Extract JSON property names", regex: jsonPropertyNamesRegex } }];
 const errors = [{ key: 'erroneousSpaces', description: 'Find erroneous spaces in code', regex: /[^\S\r\n]+/ }];
+const units = [{ key: 'physicsUnits', description: 'Matches common physics measurement units', regex: /^(m|kg|s|A|K|mol|cd|N|J|W|Pa|C|V|F|Ω|S|H|T|Bq|Gy|Sv|lm|lx|cd|rad|sr|Hz|N·m|J·s|W·s|Pa·s|C·m|V·A|C·s|J·m|N·s|kg·m|m·s|kg·m²|m³|m²|Hz·s|K·m|kg·s|mol·m|cd·m|A·s)$/ }];
