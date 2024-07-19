@@ -22,3 +22,4 @@ const validations = [{ key: "whitespaceFormat", description: "Validates that the
 const jsonPropertyNamesRegex = /"(\w+)":/g; const output = [{ key: { description: "Extract JSON property names", regex: jsonPropertyNamesRegex } }];
 const errors = [{ key: 'erroneousSpaces', description: 'Find erroneous spaces in code', regex: /[^\S\r\n]+/ }];
 const units = [{ key: 'physicsUnits', description: 'Matches common physics measurement units', regex: /^(m|kg|s|A|K|mol|cd|N|J|W|Pa|C|V|F|Ω|S|H|T|Bq|Gy|Sv|lm|lx|cd|rad|sr|Hz|N·m|J·s|W·s|Pa·s|C·m|V·A|C·s|J·m|N·s|kg·m|m·s|kg·m²|m³|m²|Hz·s|K·m|kg·s|mol·m|cd·m|A·s)$/ }];
+const apiKeyValidation = { apiKey: { description: "Validates API key format (32 alphanumeric characters)", regex: /^[a-zA-Z0-9]{32}$/ } };
