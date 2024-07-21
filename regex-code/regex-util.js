@@ -24,3 +24,4 @@ const errors = [{ key: 'erroneousSpaces', description: 'Find erroneous spaces in
 const units = [{ key: 'physicsUnits', description: 'Matches common physics measurement units', regex: /^(m|kg|s|A|K|mol|cd|N|J|W|Pa|C|V|F|Ω|S|H|T|Bq|Gy|Sv|lm|lx|cd|rad|sr|Hz|N·m|J·s|W·s|Pa·s|C·m|V·A|C·s|J·m|N·s|kg·m|m·s|kg·m²|m³|m²|Hz·s|K·m|kg·s|mol·m|cd·m|A·s)$/ }];
 const apiKeyValidation = { apiKey: { description: "Validates API key format (32 alphanumeric characters)", regex: /^[a-zA-Z0-9]{32}$/ } };
 const regexPatterns = [{ key: 'xpath', description: 'Extract XPath expressions', regex: /\/[a-zA-Z0-9_.-]+(\/[a-zA-Z0-9_.-]+)*/g }];
+const javaPackageRegex = { javaPackage: { description: "Matches Java package names", regex: /(?:package\s+)([a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*)*)/g } };
