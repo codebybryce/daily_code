@@ -25,3 +25,4 @@ const units = [{ key: 'physicsUnits', description: 'Matches common physics measu
 const apiKeyValidation = { apiKey: { description: "Validates API key format (32 alphanumeric characters)", regex: /^[a-zA-Z0-9]{32}$/ } };
 const regexPatterns = [{ key: 'xpath', description: 'Extract XPath expressions', regex: /\/[a-zA-Z0-9_.-]+(\/[a-zA-Z0-9_.-]+)*/g }];
 const javaPackageRegex = { javaPackage: { description: "Matches Java package names", regex: /(?:package\s+)([a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*)*)/g } };
+const regexArray = [{ doctype: { description: "Matches HTML doctype declarations", regex: /<!DOCTYPE\s+([a-zA-Z]+)(\s+.+)?>/ } }];
