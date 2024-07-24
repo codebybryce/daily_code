@@ -27,3 +27,4 @@ const regexPatterns = [{ key: 'xpath', description: 'Extract XPath expressions',
 const javaPackageRegex = { javaPackage: { description: "Matches Java package names", regex: /(?:package\s+)([a-zA-Z_][a-zA-Z0-9_]*(?:\.[a-zA-Z_][a-zA-Z0-9_]*)*)/g } };
 const regexArray = [{ doctype: { description: "Matches HTML doctype declarations", regex: /<!DOCTYPE\s+([a-zA-Z]+)(\s+.+)?>/ } }];
 const colorValidation = { rgb: { description: "Valid RGB color code (e.g. rgb(255, 255, 255))", regex: /^\s*rgb\s*\(\s*(\d{1,3}\s*,\s*){2}\d{1,3}\s*\)\s*$/ } };
+const regexPatterns = [{ title: { description: "Extract titles from bibliographies", regex: /(?<=\.\s)(.*?)(?=\.\s|\n)/g } }];
