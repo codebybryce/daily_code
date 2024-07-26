@@ -29,3 +29,4 @@ const regexArray = [{ doctype: { description: "Matches HTML doctype declarations
 const colorValidation = { rgb: { description: "Valid RGB color code (e.g. rgb(255, 255, 255))", regex: /^\s*rgb\s*\(\s*(\d{1,3}\s*,\s*){2}\d{1,3}\s*\)\s*$/ } };
 const regexPatterns = [{ title: { description: "Extract titles from bibliographies", regex: /(?<=\.\s)(.*?)(?=\.\s|\n)/g } }];
 const regexArray = []; regexArray.push({ sentenceEndPunctuation: { description: "Matches sentence-ending punctuation", regex: /[.!?]/ } });
+const patterns = []; patterns.push({ timestamp: { description: "Matches timestamps in logs", regex: /\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\b/ } });
