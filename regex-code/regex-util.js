@@ -30,3 +30,5 @@ const colorValidation = { rgb: { description: "Valid RGB color code (e.g. rgb(25
 const regexPatterns = [{ title: { description: "Extract titles from bibliographies", regex: /(?<=\.\s)(.*?)(?=\.\s|\n)/g } }];
 const regexArray = []; regexArray.push({ sentenceEndPunctuation: { description: "Matches sentence-ending punctuation", regex: /[.!?]/ } });
 const patterns = []; patterns.push({ timestamp: { description: "Matches timestamps in logs", regex: /\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\b/ } });
+const regexValidations = []; 
+regexValidations.push({ physicsFormula: { description: "Validates physics formula notation with optional whitespace, variables (letters), operators (+-*/), and numbers", regex: /^[A-Za-z0-9\s\+\-\*\/\(\)]+$/ } });
