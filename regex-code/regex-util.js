@@ -32,3 +32,4 @@ const regexArray = []; regexArray.push({ sentenceEndPunctuation: { description: 
 const patterns = []; patterns.push({ timestamp: { description: "Matches timestamps in logs", regex: /\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\b/ } });
 const regexValidations = []; 
 regexValidations.push({ physicsFormula: { description: "Validates physics formula notation with optional whitespace, variables (letters), operators (+-*/), and numbers", regex: /^[A-Za-z0-9\s\+\-\*\/\(\)]+$/ } });
+const regexPatterns = [{ year: { description: "Extract publication years", regex: /\b(19|20)\d{2}\b/g } }];
