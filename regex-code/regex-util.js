@@ -34,3 +34,5 @@ const regexValidations = [];
 regexValidations.push({ physicsFormula: { description: "Validates physics formula notation with optional whitespace, variables (letters), operators (+-*/), and numbers", regex: /^[A-Za-z0-9\s\+\-\*\/\(\)]+$/ } });
 const regexPatterns = [{ year: { description: "Extract publication years", regex: /\b(19|20)\d{2}\b/g } }];
 const misformattedCSVRows = [{ key: 'misformattedRow', description: 'Rows with inconsistent number of commas', regex: /^(?:[^,]*,)*[^,]*$/ }];
+const regexPatterns = []; 
+regexPatterns.push({ complexSearchQuery: { description: "Matches complex search queries with optional operators", regex: /(?=.*\bquery\b)(?=.*\b(?:AND|OR|NOT)\b).*$/ } });
