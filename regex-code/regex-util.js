@@ -36,3 +36,4 @@ const regexPatterns = [{ year: { description: "Extract publication years", regex
 const misformattedCSVRows = [{ key: 'misformattedRow', description: 'Rows with inconsistent number of commas', regex: /^(?:[^,]*,)*[^,]*$/ }];
 const regexPatterns = []; 
 regexPatterns.push({ complexSearchQuery: { description: "Matches complex search queries with optional operators", regex: /(?=.*\bquery\b)(?=.*\b(?:AND|OR|NOT)\b).*$/ } });
+const imeiValidation = { imei: { description: "Validate IMEI numbers", regex: /^(?:[0-9]{15}|[0-9]{14}[Xx])$/ } };
