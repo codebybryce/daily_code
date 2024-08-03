@@ -39,3 +39,4 @@ regexPatterns.push({ complexSearchQuery: { description: "Matches complex search 
 const imeiValidation = { imei: { description: "Validate IMEI numbers", regex: /^(?:[0-9]{15}|[0-9]{14}[Xx])$/ } };
 const dnsRecords = logs.match(/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}/g).map((record, index) => ({ [`dnsRecord${index + 1}`]: { description: "DNS record extracted", regex: new RegExp(record) } }));
 const regexArray = [{ trailingSlashes: { description: "Matches trailing slashes in URLs", regex: /\/+$/ } }];
+const regexArray = []; regexArray.push({ referrerURL: { description: "Matches referrer URLs", regex: /^(https?:\/\/)?(www\.)?([a-z0-9-]+\.)+[a-z]{2,}\/?.*$/i } });
