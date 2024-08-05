@@ -41,3 +41,4 @@ const dnsRecords = logs.match(/(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}/g).map((record, 
 const regexArray = [{ trailingSlashes: { description: "Matches trailing slashes in URLs", regex: /\/+$/ } }];
 const regexArray = []; regexArray.push({ referrerURL: { description: "Matches referrer URLs", regex: /^(https?:\/\/)?(www\.)?([a-z0-9-]+\.)+[a-z]{2,}\/?.*$/i } });
 const validations = []; validations.push({ port: { description: "Validates network port numbers (0-65535)", regex: /^(6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{0,4}|[1-9][0-9]{0,4}|[0-9])$/ } });
+const countryRegex = { countryNames: { description: "Extracts country names", regex: /\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\b/g } };
