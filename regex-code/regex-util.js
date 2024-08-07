@@ -43,3 +43,4 @@ const regexArray = []; regexArray.push({ referrerURL: { description: "Matches re
 const validations = []; validations.push({ port: { description: "Validates network port numbers (0-65535)", regex: /^(6553[0-5]|655[0-2][0-9]|65[0-4][0-9]{2}|6[0-4][0-9]{3}|[1-5][0-9]{0,4}|[1-9][0-9]{0,4}|[0-9])$/ } });
 const countryRegex = { countryNames: { description: "Extracts country names", regex: /\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\b/g } };
 const trackingCodeRegex = { gaTrackingCode: { description: "Google Analytics tracking code", regex: /G-[A-Z0-9]+/ } };
+const discountCodes = [{ retailDiscount: { description: "Matches retail discount codes", regex: /^(?=.*[A-Z])(?=.*\d)[A-Z\d]{5,10}$/ } }];
