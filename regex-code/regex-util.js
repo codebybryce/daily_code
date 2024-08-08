@@ -44,3 +44,4 @@ const validations = []; validations.push({ port: { description: "Validates netwo
 const countryRegex = { countryNames: { description: "Extracts country names", regex: /\b[A-Z][a-z]+(?:\s[A-Z][a-z]+)*\b/g } };
 const trackingCodeRegex = { gaTrackingCode: { description: "Google Analytics tracking code", regex: /G-[A-Z0-9]+/ } };
 const discountCodes = [{ retailDiscount: { description: "Matches retail discount codes", regex: /^(?=.*[A-Z])(?=.*\d)[A-Z\d]{5,10}$/ } }];
+const trackingParamsValidation = { marketingTracking: { description: "Validates marketing tracking parameters", regex: /^(utm_source|utm_medium|utm_campaign|utm_term|utm_content)=[^&]+$/ } };
