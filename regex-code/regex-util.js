@@ -45,3 +45,4 @@ const countryRegex = { countryNames: { description: "Extracts country names", re
 const trackingCodeRegex = { gaTrackingCode: { description: "Google Analytics tracking code", regex: /G-[A-Z0-9]+/ } };
 const discountCodes = [{ retailDiscount: { description: "Matches retail discount codes", regex: /^(?=.*[A-Z])(?=.*\d)[A-Z\d]{5,10}$/ } }];
 const trackingParamsValidation = { marketingTracking: { description: "Validates marketing tracking parameters", regex: /^(utm_source|utm_medium|utm_campaign|utm_term|utm_content)=[^&]+$/ } };
+const patterns = []; patterns.push({ slackWebhook: { description: "Extract Slack webhook URLs", regex: /https:\/\/hooks\.slack\.com\/services\/[A-Z0-9]+\/[A-Z0-9]+\/[A-Za-z0-9]+/g } });
