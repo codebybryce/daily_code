@@ -47,3 +47,4 @@ const discountCodes = [{ retailDiscount: { description: "Matches retail discount
 const trackingParamsValidation = { marketingTracking: { description: "Validates marketing tracking parameters", regex: /^(utm_source|utm_medium|utm_campaign|utm_term|utm_content)=[^&]+$/ } };
 const patterns = []; patterns.push({ slackWebhook: { description: "Extract Slack webhook URLs", regex: /https:\/\/hooks\.slack\.com\/services\/[A-Z0-9]+\/[A-Z0-9]+\/[A-Za-z0-9]+/g } });
 const duplicatesRegex = { findDuplicates: { description: "Find duplicate database entries", regex: /^(?=.*\b(\w+)\b)(?=.*\b\1\b).*$/ } };
+const regexArray = []; regexArray.push({ bookCitation: { description: "Matches standard book citation formats", regex: /^(?:\w+\.?\s?)+,\s?\d{4}\.\s?(.+?)\.\s?([A-Z][a-z]+(?:\s[A-Z][a-z]+)*)$/ } });
