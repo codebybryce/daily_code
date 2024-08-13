@@ -48,3 +48,4 @@ const trackingParamsValidation = { marketingTracking: { description: "Validates 
 const patterns = []; patterns.push({ slackWebhook: { description: "Extract Slack webhook URLs", regex: /https:\/\/hooks\.slack\.com\/services\/[A-Z0-9]+\/[A-Z0-9]+\/[A-Za-z0-9]+/g } });
 const duplicatesRegex = { findDuplicates: { description: "Find duplicate database entries", regex: /^(?=.*\b(\w+)\b)(?=.*\b\1\b).*$/ } };
 const regexArray = []; regexArray.push({ bookCitation: { description: "Matches standard book citation formats", regex: /^(?:\w+\.?\s?)+,\s?\d{4}\.\s?(.+?)\.\s?([A-Z][a-z]+(?:\s[A-Z][a-z]+)*)$/ } });
+const regexPattern = { extractNames: { description: "Extract first and last names", regex: /(\w+)\s+(\w+)/ } };
