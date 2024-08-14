@@ -49,3 +49,4 @@ const patterns = []; patterns.push({ slackWebhook: { description: "Extract Slack
 const duplicatesRegex = { findDuplicates: { description: "Find duplicate database entries", regex: /^(?=.*\b(\w+)\b)(?=.*\b\1\b).*$/ } };
 const regexArray = []; regexArray.push({ bookCitation: { description: "Matches standard book citation formats", regex: /^(?:\w+\.?\s?)+,\s?\d{4}\.\s?(.+?)\.\s?([A-Z][a-z]+(?:\s[A-Z][a-z]+)*)$/ } });
 const regexPattern = { extractNames: { description: "Extract first and last names", regex: /(\w+)\s+(\w+)/ } };
+const regexPatterns = [{ camelCase: { description: "Find camelCase variables", regex: /^[a-z]+([A-Z][a-z]*)*$/ } }];
