@@ -51,3 +51,4 @@ const regexArray = []; regexArray.push({ bookCitation: { description: "Matches s
 const regexPattern = { extractNames: { description: "Extract first and last names", regex: /(\w+)\s+(\w+)/ } };
 const regexPatterns = [{ camelCase: { description: "Find camelCase variables", regex: /^[a-z]+([A-Z][a-z]*)*$/ } }];
 const regexArray = []; regexArray.push({ unixPermissions: { description: "Matches Unix file permissions", regex: /^([drwx-]{10})$/ } });
+const cookieValidation = { cookieValue: { description: "Validates cookie values according to RFC 6265", regex: /^[!#$%&'*+.\-^_`|~0-9a-zA-Z]+(=[!#$%&'*+.\-^_`|~0-9a-zA-Z]*)?$/ } };
