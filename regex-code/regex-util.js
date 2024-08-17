@@ -52,3 +52,4 @@ const regexPattern = { extractNames: { description: "Extract first and last name
 const regexPatterns = [{ camelCase: { description: "Find camelCase variables", regex: /^[a-z]+([A-Z][a-z]*)*$/ } }];
 const regexArray = []; regexArray.push({ unixPermissions: { description: "Matches Unix file permissions", regex: /^([drwx-]{10})$/ } });
 const cookieValidation = { cookieValue: { description: "Validates cookie values according to RFC 6265", regex: /^[!#$%&'*+.\-^_`|~0-9a-zA-Z]+(=[!#$%&'*+.\-^_`|~0-9a-zA-Z]*)?$/ } };
+const xmlAttrExtractor = { xmlAttr: { description: "Extract XML attribute values", regex: /<\w+\s+[^>]*?(\w+)="([^"]*?)"/g } };
