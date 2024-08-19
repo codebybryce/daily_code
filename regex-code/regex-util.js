@@ -54,3 +54,4 @@ const regexArray = []; regexArray.push({ unixPermissions: { description: "Matche
 const cookieValidation = { cookieValue: { description: "Validates cookie values according to RFC 6265", regex: /^[!#$%&'*+.\-^_`|~0-9a-zA-Z]+(=[!#$%&'*+.\-^_`|~0-9a-zA-Z]*)?$/ } };
 const xmlAttrExtractor = { xmlAttr: { description: "Extract XML attribute values", regex: /<\w+\s+[^>]*?(\w+)="([^"]*?)"/g } };
 const patterns = []; patterns.push({ overlappingWords: { description: "Find overlapping word patterns", regex: /(?=(\b\w+\b))(?=\1)/g } });
+const models = []; models.push({ ml_model: { description: "Matches common machine learning model names", regex: /^(?:[A-Z][a-zA-Z0-9]*)(?:\s+[A-Z][a-zA-Z0-9]*)*$/ } });
