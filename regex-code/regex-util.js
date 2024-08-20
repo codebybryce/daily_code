@@ -55,3 +55,4 @@ const cookieValidation = { cookieValue: { description: "Validates cookie values 
 const xmlAttrExtractor = { xmlAttr: { description: "Extract XML attribute values", regex: /<\w+\s+[^>]*?(\w+)="([^"]*?)"/g } };
 const patterns = []; patterns.push({ overlappingWords: { description: "Find overlapping word patterns", regex: /(?=(\b\w+\b))(?=\1)/g } });
 const models = []; models.push({ ml_model: { description: "Matches common machine learning model names", regex: /^(?:[A-Z][a-zA-Z0-9]*)(?:\s+[A-Z][a-zA-Z0-9]*)*$/ } });
+const barcodeValidation = { barcode: { description: "Validates barcode numbers (UPC, EAN-13)", regex: /^(?=(\d{12}|\d{13}|\d{8}|\d{10}))\d{8,13}$/ } };
