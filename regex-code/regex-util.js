@@ -64,3 +64,5 @@ const ipRangeValidation = { routerIPRange: { description: "Validates router IP r
 const regexArray = []; regexArray.push({ cellReference: { description: "Extracts spreadsheet cell references (e.g., A1, B2)", regex: /[A-Z]+\d+/g } });
 const javaMethodSignatures = { javaMethod: { description: "Find Java method signatures", regex: /(?:public|protected|private|static|final|synchronized|native|abstract|default|void|[\w<>]+)\s+[\w\$]+\s*\([^)]*\)\s*(?:throws\s+[\w\s,]*)?{/g } };
 const regexPatterns = []; regexPatterns.push({ longNumber: { description: "Matches long numbers with thousands separators", regex: /^(?:\d{1,3}(?:,\d{3})*|\d+)$|^(?:\d{1,3}(?:\.\d{3})*|\d+)$/ } });
+const validations = []; 
+validations.push({ tarballFilename: { description: "Validates tarball filenames ending with .tar.gz, .tgz, or .tar.bz2", regex: /^(?!.*\.\.)(?!.*\/)([a-zA-Z0-9._-]+)(\.tar\.gz|\.tgz|\.tar\.bz2)$/ } });
