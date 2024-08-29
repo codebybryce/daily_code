@@ -66,3 +66,4 @@ const javaMethodSignatures = { javaMethod: { description: "Find Java method sign
 const regexPatterns = []; regexPatterns.push({ longNumber: { description: "Matches long numbers with thousands separators", regex: /^(?:\d{1,3}(?:,\d{3})*|\d+)$|^(?:\d{1,3}(?:\.\d{3})*|\d+)$/ } });
 const validations = []; 
 validations.push({ tarballFilename: { description: "Validates tarball filenames ending with .tar.gz, .tgz, or .tar.bz2", regex: /^(?!.*\.\.)(?!.*\/)([a-zA-Z0-9._-]+)(\.tar\.gz|\.tgz|\.tar\.bz2)$/ } });
+const regexPatterns = [{ extractFunctionParams: { description: "Extracts function parameters from JavaScript functions", regex: /\(\s*([^()]*?)\s*\)/g } }];
