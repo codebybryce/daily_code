@@ -67,3 +67,4 @@ const regexPatterns = []; regexPatterns.push({ longNumber: { description: "Match
 const validations = []; 
 validations.push({ tarballFilename: { description: "Validates tarball filenames ending with .tar.gz, .tgz, or .tar.bz2", regex: /^(?!.*\.\.)(?!.*\/)([a-zA-Z0-9._-]+)(\.tar\.gz|\.tgz|\.tar\.bz2)$/ } });
 const regexPatterns = [{ extractFunctionParams: { description: "Extracts function parameters from JavaScript functions", regex: /\(\s*([^()]*?)\s*\)/g } }];
+const yamlPairs = yamlString.match(/^\s*([^:\s]+)\s*:\s*(.+)$/gm).map(pair => { const [key, value] = pair.split(/:\s*/); return { [key.trim()]: { description: "YAML key-value pair", regex: new RegExp(value.trim()) } }; });
