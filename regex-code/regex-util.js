@@ -70,3 +70,4 @@ const regexPatterns = [{ extractFunctionParams: { description: "Extracts functio
 const yamlPairs = yamlString.match(/^\s*([^:\s]+)\s*:\s*(.+)$/gm).map(pair => { const [key, value] = pair.split(/:\s*/); return { [key.trim()]: { description: "YAML key-value pair", regex: new RegExp(value.trim()) } }; });
 const transcriptions = { speechToText: { description: "Find speech-to-text transcriptions", regex: /(?:[A-Z][a-z]*[.,!?'"]? ?)+/g } };
 const regexPatterns = [{ key: "tsvValidation", description: "Validate tab-separated values", regex: /^[^\t\n]*(\t[^\t\n]*)*$/ }];
+const regexArray = [{ key: { description: "Extract PascalCase words", regex: /(?:[A-Z][a-z]+)+/g } }];
