@@ -71,3 +71,4 @@ const yamlPairs = yamlString.match(/^\s*([^:\s]+)\s*:\s*(.+)$/gm).map(pair => { 
 const transcriptions = { speechToText: { description: "Find speech-to-text transcriptions", regex: /(?:[A-Z][a-z]*[.,!?'"]? ?)+/g } };
 const regexPatterns = [{ key: "tsvValidation", description: "Validate tab-separated values", regex: /^[^\t\n]*(\t[^\t\n]*)*$/ }];
 const regexArray = [{ key: { description: "Extract PascalCase words", regex: /(?:[A-Z][a-z]+)+/g } }];
+const ipv6SubnetMaskRegex = { ipv6Subnet: { description: "Matches IPv6 subnet masks", regex: /(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}(\/[0-9]{1,3})?/ } };
