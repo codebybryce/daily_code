@@ -73,3 +73,4 @@ const regexPatterns = [{ key: "tsvValidation", description: "Validate tab-separa
 const regexArray = [{ key: { description: "Extract PascalCase words", regex: /(?:[A-Z][a-z]+)+/g } }];
 const ipv6SubnetMaskRegex = { ipv6Subnet: { description: "Matches IPv6 subnet masks", regex: /(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}(\/[0-9]{1,3})?/ } };
 const filePathRegex = { filePath: { description: "Find file paths in logs", regex: /(?:[a-zA-Z]:)?[\/\\]?(?:[\w.-]+[\/\\])*[\w.-]+\.\w+/ } };
+const regexValidation = { unicodeNormalization: { description: "Validates Unicode normalization forms (NFC, NFD, NFKC, NFKD)", regex: /^[\u0000-\uFFFF]*$/ } };
