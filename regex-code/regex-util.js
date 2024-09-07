@@ -75,3 +75,4 @@ const ipv6SubnetMaskRegex = { ipv6Subnet: { description: "Matches IPv6 subnet ma
 const filePathRegex = { filePath: { description: "Find file paths in logs", regex: /(?:[a-zA-Z]:)?[\/\\]?(?:[\w.-]+[\/\\])*[\w.-]+\.\w+/ } };
 const regexValidation = { unicodeNormalization: { description: "Validates Unicode normalization forms (NFC, NFD, NFKC, NFKD)", regex: /^[\u0000-\uFFFF]*$/ } };
 const argsPattern = { cmdArgs: { description: "Extract command-line arguments", regex: /--?(\w+)(?:=(\S+))?/g } };
+const regexPatterns = []; regexPatterns.push({ curlyBraces: { description: "Matches content within curly braces", regex: /\{[^{}]*\}/g } });
