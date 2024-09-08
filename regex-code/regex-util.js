@@ -76,3 +76,5 @@ const filePathRegex = { filePath: { description: "Find file paths in logs", rege
 const regexValidation = { unicodeNormalization: { description: "Validates Unicode normalization forms (NFC, NFD, NFKC, NFKD)", regex: /^[\u0000-\uFFFF]*$/ } };
 const argsPattern = { cmdArgs: { description: "Extract command-line arguments", regex: /--?(\w+)(?:=(\S+))?/g } };
 const regexPatterns = []; regexPatterns.push({ curlyBraces: { description: "Matches content within curly braces", regex: /\{[^{}]*\}/g } });
+const regexValidations = []; 
+regexValidations.push({ base64: { description: "Validates base64 encoded strings", regex: /^[A-Za-z0-9+/]+={0,2}$/ } });
