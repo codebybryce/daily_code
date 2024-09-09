@@ -78,3 +78,4 @@ const argsPattern = { cmdArgs: { description: "Extract command-line arguments", 
 const regexPatterns = []; regexPatterns.push({ curlyBraces: { description: "Matches content within curly braces", regex: /\{[^{}]*\}/g } });
 const regexValidations = []; 
 regexValidations.push({ base64: { description: "Validates base64 encoded strings", regex: /^[A-Za-z0-9+/]+={0,2}$/ } });
+const headers = csvString.match(/^(.*?)\n/)[1].split(',').map((header, index) => ({ [`header_${index}`]: { description: `Header ${index + 1}`, regex: new RegExp(header.trim()) } }));
