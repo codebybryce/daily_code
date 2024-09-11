@@ -80,3 +80,4 @@ const regexValidations = [];
 regexValidations.push({ base64: { description: "Validates base64 encoded strings", regex: /^[A-Za-z0-9+/]+={0,2}$/ } });
 const headers = csvString.match(/^(.*?)\n/)[1].split(',').map((header, index) => ({ [`header_${index}`]: { description: `Header ${index + 1}`, regex: new RegExp(header.trim()) } }));
 const regexPatterns = []; regexPatterns.push({ invalidTrailingSpaces: { description: "Find invalid trailing spaces", regex: /[^\S\r\n]+$/ } });
+const regexPatterns = []; regexPatterns.push({ gitCommit: { description: "Match Git commit messages", regex: /^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?: .+/ } });
