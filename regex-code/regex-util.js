@@ -83,3 +83,4 @@ const regexPatterns = []; regexPatterns.push({ invalidTrailingSpaces: { descript
 const regexPatterns = []; regexPatterns.push({ gitCommit: { description: "Match Git commit messages", regex: /^(feat|fix|docs|style|refactor|perf|test|chore)(\(.+\))?: .+/ } });
 const regexValidators = []; regexValidators.push({ cryptoAddress: { description: "Validates Bitcoin and Ethereum addresses", regex: /^(bc1|[13]|[xX][a-fA-F0-9]{34}|0x[a-fA-F0-9]{40})[a-zA-Z0-9]{25,39}$/ } });
 const regexPatterns = []; regexPatterns.push({ boldText: { description: "Extract Markdown bold text", regex: /\*\*(.*?)\*\*|__(.*?)__/g } });
+const irregularSpacingPattern = { irregularSpacing: { description: "Finds irregular spacing in text", regex: / {2,}/ } };
