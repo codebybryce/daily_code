@@ -85,3 +85,4 @@ const regexValidators = []; regexValidators.push({ cryptoAddress: { description:
 const regexPatterns = []; regexPatterns.push({ boldText: { description: "Extract Markdown bold text", regex: /\*\*(.*?)\*\*|__(.*?)__/g } });
 const irregularSpacingPattern = { irregularSpacing: { description: "Finds irregular spacing in text", regex: / {2,}/ } };
 const xmlNamespaceRegex = { xmlNamespace: { description: "Matches XML namespaces", regex: /xmlns(:\w+)?="[^"]*"/g } };
+const validations = []; validations.push({ ssn: { description: "Validate SSN formatting", regex: /^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$/ } });
