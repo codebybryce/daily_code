@@ -86,3 +86,4 @@ const regexPatterns = []; regexPatterns.push({ boldText: { description: "Extract
 const irregularSpacingPattern = { irregularSpacing: { description: "Finds irregular spacing in text", regex: / {2,}/ } };
 const xmlNamespaceRegex = { xmlNamespace: { description: "Matches XML namespaces", regex: /xmlns(:\w+)?="[^"]*"/g } };
 const validations = []; validations.push({ ssn: { description: "Validate SSN formatting", regex: /^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$/ } });
+const regexAnswers = str => Array.from(str.matchAll(/([A-Z]\.)(.*?)(?=\s*[A-Z]\.|$)/g)).map(([_, key, description]) => ({ [key.trim()]: { description: description.trim(), regex: new RegExp(description.trim()) } }));
