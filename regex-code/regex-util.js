@@ -88,3 +88,4 @@ const xmlNamespaceRegex = { xmlNamespace: { description: "Matches XML namespaces
 const validations = []; validations.push({ ssn: { description: "Validate SSN formatting", regex: /^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$/ } });
 const regexAnswers = str => Array.from(str.matchAll(/([A-Z]\.)(.*?)(?=\s*[A-Z]\.|$)/g)).map(([_, key, description]) => ({ [key.trim()]: { description: description.trim(), regex: new RegExp(description.trim()) } }));
 const phoneExtensions = { phoneExtension: { description: "Finds phone extensions", regex: /\b(?:ext\.?|extension)?\s*(\d{2,5})\b/ } };
+const patterns = []; patterns.push({ pgpHeader: { description: "Matches PGP encryption headers", regex: /^-----BEGIN PGP (ENCRYPTED MESSAGE|MESSAGE|PUBLIC KEY BLOCK|PRIVATE KEY BLOCK)-----$/ } });
