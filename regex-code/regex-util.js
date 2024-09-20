@@ -89,3 +89,4 @@ const validations = []; validations.push({ ssn: { description: "Validate SSN for
 const regexAnswers = str => Array.from(str.matchAll(/([A-Z]\.)(.*?)(?=\s*[A-Z]\.|$)/g)).map(([_, key, description]) => ({ [key.trim()]: { description: description.trim(), regex: new RegExp(description.trim()) } }));
 const phoneExtensions = { phoneExtension: { description: "Finds phone extensions", regex: /\b(?:ext\.?|extension)?\s*(\d{2,5})\b/ } };
 const patterns = []; patterns.push({ pgpHeader: { description: "Matches PGP encryption headers", regex: /^-----BEGIN PGP (ENCRYPTED MESSAGE|MESSAGE|PUBLIC KEY BLOCK|PRIVATE KEY BLOCK)-----$/ } });
+const stockSymbolValidator = { stockSymbol: { description: "Valid stock market symbols (1-5 uppercase letters)", regex: /^[A-Z]{1,5}$/ } };
