@@ -91,3 +91,4 @@ const phoneExtensions = { phoneExtension: { description: "Finds phone extensions
 const patterns = []; patterns.push({ pgpHeader: { description: "Matches PGP encryption headers", regex: /^-----BEGIN PGP (ENCRYPTED MESSAGE|MESSAGE|PUBLIC KEY BLOCK|PRIVATE KEY BLOCK)-----$/ } });
 const stockSymbolValidator = { stockSymbol: { description: "Valid stock market symbols (1-5 uppercase letters)", regex: /^[A-Z]{1,5}$/ } };
 const regexPattern = /class\s+([A-Za-z_$][\w$]*)/g; const classes = []; const matches = inputString.match(regexPattern); if (matches) { matches.forEach(match => { const className = match.split(' ')[1]; classes.push({ [className]: { description: "JavaScript class name", regex: regexPattern } }); }); }
+const regexPatterns = [{ findDuplicates: { description: "Find and remove duplicates in lists", regex: /^(?!.*\b(\w+)\b.*\1)\b\w+\b/g } }];
