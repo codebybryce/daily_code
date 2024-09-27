@@ -97,3 +97,4 @@ regexPatterns.push({ stopwords: { description: "Regex to match common NLP stopwo
 const hexIdValidation = { hexId: { description: "Validates hexadecimal ID numbers", regex: /^[0-9A-Fa-f]+$/ } };
 const dependencies = configFile.match(/dependencies:\s*\[(.*?)\]/s)[1].split(',').map(dep => ({ [dep.trim()]: { description: "Project Dependency", regex: new RegExp(dep.trim()) } }));
 const regexPatterns = []; regexPatterns.push({ loopStatement: { description: "Matches common programming loop statements (for, while, do-while)", regex: /^(for|while|do\s+while)\s*\(.*\)\s*\{.*\}$/ } });
+const overusedWords = { overused: { description: "Finds overused words like 'very', 'really', 'just', 'actually'", regex: /\b(very|really|just|actually)\b/ } };
