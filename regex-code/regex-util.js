@@ -104,3 +104,4 @@ const regexProperties = [{ key: 'jsObjProps', description: 'Matches JavaScript o
 const regexAssignments = { variableAssignments: { description: "Extract variable assignments in Python", regex: /(\w+)\s*=\s*(.*?)(?=\n|$)/g } };
 const regexPatterns = []; regexPatterns.push({ "extraNewlines": { description: "Find extra newline characters", regex: /\n{2,}/g } });
 const twitchUsernameValidation = { twitchUsername: { description: "Validates Twitch usernames (3-25 characters, alphanumeric, underscores, cannot start with a number, no special characters)", regex: /^(?![0-9])[\w]{3,25}$/ } };
+const patterns = []; patterns.push({ score: { description: "Match sports scores in the format 'TeamA 1 - 2 TeamB'", regex: /^\w+\s\d+\s-\s\d+\s\w+$/ } });
