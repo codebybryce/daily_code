@@ -108,3 +108,4 @@ const patterns = []; patterns.push({ score: { description: "Match sports scores 
 const regexPatterns = [{ href: { description: "Extracts href values from <a> tags", regex: /<a[^>]+href=["']([^"']+)["'][^>]*>/g } }];
 const regexArray = [{ unicode: { description: "Find escaped Unicode sequences", regex: /\\u[0-9a-fA-F]{4}/g } }];
 const userAgentValidation = { userAgent: { description: "Validates user-agent strings", regex: /^(Mozilla\/[0-9.]+ \((Windows|Macintosh|Linux|X11);.*\) AppleWebKit\/[0-9.]+ \(KHTML, like Gecko\) Chrome\/[0-9.]+ Safari\/[0-9.]+)$/ } };
+const mediaQueryRegex = { mediaQueries: { description: "Extract CSS media queries", regex: /@media\s+([^{]+)\s*{([^}]+)}/g } };
