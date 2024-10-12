@@ -112,3 +112,4 @@ const mediaQueryRegex = { mediaQueries: { description: "Extract CSS media querie
 const dateTimeFormats = [{ key: 'iso', description: 'ISO 8601 format', regex: /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?(?:[+-]\d{2}:\d{2}|Z)$/ }, { key: 'short', description: 'Short date format', regex: /^\d{1,2}\/\d{1,2}\/\d{2,4}$/ }, { key: 'long', description: 'Long date format', regex: /^(January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4} \d{1,2}:\d{2}(?: [AP]M)?$/ }];
 const skuValidation = { sku: { description: "Validates product SKUs in the format ABC-1234-XYZ", regex: /^[A-Z]{3}-\d{4}-[A-Z]{3}$/ } };
 const regexPatterns = [{ key: "latLong", description: "Extracts latitude and longitude pairs", regex: /(-?\d{1,3}\.\d+),\s*(-?\d{1,3}\.\d+)/g }];
+const corrections = [ { key: 'typo1', description: 'Corrects "recieve" to "receive"', regex: /recieve/g } ];
