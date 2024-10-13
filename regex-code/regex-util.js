@@ -113,3 +113,4 @@ const dateTimeFormats = [{ key: 'iso', description: 'ISO 8601 format', regex: /^
 const skuValidation = { sku: { description: "Validates product SKUs in the format ABC-1234-XYZ", regex: /^[A-Z]{3}-\d{4}-[A-Z]{3}$/ } };
 const regexPatterns = [{ key: "latLong", description: "Extracts latitude and longitude pairs", regex: /(-?\d{1,3}\.\d+),\s*(-?\d{1,3}\.\d+)/g }];
 const corrections = [ { key: 'typo1', description: 'Corrects "recieve" to "receive"', regex: /recieve/g } ];
+const regexArray = [{ slackChannelName: { description: "Matches Slack channel names (lowercase letters, numbers, hyphens, and underscores)", regex: /^[a-z0-9_-]+$/ } }];
