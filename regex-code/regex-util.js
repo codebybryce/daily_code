@@ -114,3 +114,4 @@ const skuValidation = { sku: { description: "Validates product SKUs in the forma
 const regexPatterns = [{ key: "latLong", description: "Extracts latitude and longitude pairs", regex: /(-?\d{1,3}\.\d+),\s*(-?\d{1,3}\.\d+)/g }];
 const corrections = [ { key: 'typo1', description: 'Corrects "recieve" to "receive"', regex: /recieve/g } ];
 const regexArray = [{ slackChannelName: { description: "Matches Slack channel names (lowercase letters, numbers, hyphens, and underscores)", regex: /^[a-z0-9_-]+$/ } }];
+const licensePlateValidator = { carLicensePlate: { description: "Validates car license plates in the format ABC-1234 or AB-12-CD", regex: /^[A-Z]{2,3}-\d{2,4}(-[A-Z]{2})?$/ } };
