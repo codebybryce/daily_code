@@ -117,3 +117,4 @@ const regexArray = [{ slackChannelName: { description: "Matches Slack channel na
 const licensePlateValidator = { carLicensePlate: { description: "Validates car license plates in the format ABC-1234 or AB-12-CD", regex: /^[A-Z]{2,3}-\d{2,4}(-[A-Z]{2})?$/ } };
 const errorCodes = logs.match(/ERROR\s+\d{3}/g).map(code => ({ [code]: { description: "Error code found in logs", regex: /ERROR\s+\d{3}/ } }));
 const patterns = [{ key: 'consoleLog', description: 'Find all JavaScript console logs', regex: /console\.log\(([^)]*)\);?/g }];
+{ key: { description: "Match Unicode emojis", regex: /([\u203C-\u3299\u1F000-\u1F9FF\u2600-\u26FF\u2700-\u27BF\uD83C\uDF00-\uD83E\uDDFF])/ } }
