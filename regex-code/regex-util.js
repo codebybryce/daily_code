@@ -118,3 +118,4 @@ const licensePlateValidator = { carLicensePlate: { description: "Validates car l
 const errorCodes = logs.match(/ERROR\s+\d{3}/g).map(code => ({ [code]: { description: "Error code found in logs", regex: /ERROR\s+\d{3}/ } }));
 const patterns = [{ key: 'consoleLog', description: 'Find all JavaScript console logs', regex: /console\.log\(([^)]*)\);?/g }];
 { key: { description: "Match Unicode emojis", regex: /([\u203C-\u3299\u1F000-\u1F9FF\u2600-\u26FF\u2700-\u27BF\uD83C\uDF00-\uD83E\uDDFF])/ } }
+const urlSlugValidator = { urlSlug: { description: "Validates URL slugs containing lowercase letters, numbers, and hyphens, starting with a letter.", regex: /^[a-z]+(-[a-z0-9]+)*$/ } };
