@@ -121,3 +121,4 @@ const patterns = [{ key: 'consoleLog', description: 'Find all JavaScript console
 const urlSlugValidator = { urlSlug: { description: "Validates URL slugs containing lowercase letters, numbers, and hyphens, starting with a letter.", regex: /^[a-z]+(-[a-z0-9]+)*$/ } };
 const hexRegex = { hex: { description: "Extract hexadecimal values", regex: /0[xX][0-9a-fA-F]+/g } };
 const percentageRegex = { percentage: { description: "Matches percentage values", regex: /(\d+(\.\d+)?)%/g } };
+const regexArray = [{ zipPlus4: { description: "Matches ZIP+4 postal codes", regex: /^\d{5}-\d{4}$/ } }];
