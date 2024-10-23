@@ -123,3 +123,4 @@ const hexRegex = { hex: { description: "Extract hexadecimal values", regex: /0[x
 const percentageRegex = { percentage: { description: "Matches percentage values", regex: /(\d+(\.\d+)?)%/g } };
 const regexArray = [{ zipPlus4: { description: "Matches ZIP+4 postal codes", regex: /^\d{5}-\d{4}$/ } }];
 const nutritionLabelValidation = { nutritionLabel: { description: "Validates food nutrition labels with calories, fat, carbs, and protein", regex: /^(Calories:\s*\d+\s*|Fat:\s*\d+\s*g\s*|Carbohydrates:\s*\d+\s*g\s*|Protein:\s*\d+\s*g\s*)+$/ } };
+const rgbRegex = { rgb: { description: "Extract RGB color values", regex: /\brgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*(\d?\.?\d+|\d+%))?\s*\)/g } };
