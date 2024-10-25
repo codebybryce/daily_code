@@ -125,3 +125,4 @@ const regexArray = [{ zipPlus4: { description: "Matches ZIP+4 postal codes", reg
 const nutritionLabelValidation = { nutritionLabel: { description: "Validates food nutrition labels with calories, fat, carbs, and protein", regex: /^(Calories:\s*\d+\s*|Fat:\s*\d+\s*g\s*|Carbohydrates:\s*\d+\s*g\s*|Protein:\s*\d+\s*g\s*)+$/ } };
 const rgbRegex = { rgb: { description: "Extract RGB color values", regex: /\brgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*(\d?\.?\d+|\d+%))?\s*\)/g } };
 const regexPatterns = [{ key: 'repeatedNumbers', description: "Find repeated number sequences", regex: /(\d+)\s*\1+/g }];
+const versionRegex = { version: { description: "Matches software version numbers", regex: /^\d+(\.\d+){1,2}(\-\w+)?(\+\w+)?$/ } };
