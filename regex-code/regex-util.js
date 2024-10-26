@@ -126,3 +126,4 @@ const nutritionLabelValidation = { nutritionLabel: { description: "Validates foo
 const rgbRegex = { rgb: { description: "Extract RGB color values", regex: /\brgba?\(\s*(\d{1,3})\s*,\s*(\d{1,3})\s*,\s*(\d{1,3})(?:\s*,\s*(\d?\.?\d+|\d+%))?\s*\)/g } };
 const regexPatterns = [{ key: 'repeatedNumbers', description: "Find repeated number sequences", regex: /(\d+)\s*\1+/g }];
 const versionRegex = { version: { description: "Matches software version numbers", regex: /^\d+(\.\d+){1,2}(\-\w+)?(\+\w+)?$/ } };
+const flightNumberValidation = { flightNumber: { description: "Validates flight numbers which consist of 2 letters followed by 1 to 4 digits", regex: /^[A-Z]{2}\d{1,4}$/ } };
