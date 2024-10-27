@@ -127,3 +127,4 @@ const rgbRegex = { rgb: { description: "Extract RGB color values", regex: /\brgb
 const regexPatterns = [{ key: 'repeatedNumbers', description: "Find repeated number sequences", regex: /(\d+)\s*\1+/g }];
 const versionRegex = { version: { description: "Matches software version numbers", regex: /^\d+(\.\d+){1,2}(\-\w+)?(\+\w+)?$/ } };
 const flightNumberValidation = { flightNumber: { description: "Validates flight numbers which consist of 2 letters followed by 1 to 4 digits", regex: /^[A-Z]{2}\d{1,4}$/ } };
+const userIdRegex = { userId: { description: "Extract user IDs from API responses", regex: /"userId":\s*"(\w+)"/g } };
