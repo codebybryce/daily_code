@@ -129,3 +129,4 @@ const versionRegex = { version: { description: "Matches software version numbers
 const flightNumberValidation = { flightNumber: { description: "Validates flight numbers which consist of 2 letters followed by 1 to 4 digits", regex: /^[A-Z]{2}\d{1,4}$/ } };
 const userIdRegex = { userId: { description: "Extract user IDs from API responses", regex: /"userId":\s*"(\w+)"/g } };
 const regexPatterns = [{ uniqueWords: { description: "Find unique words in a text", regex: /\b(\w+)\b(?!.*\b\1\b)/g } }];
+const regexVariations = { spellingVariation: { description: "Matches different spelling variations", regex: /spelling|speling|spelng/i } };
