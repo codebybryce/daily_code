@@ -130,3 +130,4 @@ const flightNumberValidation = { flightNumber: { description: "Validates flight 
 const userIdRegex = { userId: { description: "Extract user IDs from API responses", regex: /"userId":\s*"(\w+)"/g } };
 const regexPatterns = [{ uniqueWords: { description: "Find unique words in a text", regex: /\b(\w+)\b(?!.*\b\1\b)/g } }];
 const regexVariations = { spellingVariation: { description: "Matches different spelling variations", regex: /spelling|speling|spelng/i } };
+const morseCodeValidation = { morseCode: { description: "Validates Morse code inputs consisting of dots, dashes, and spaces", regex: /^[.-\s]+$/ } };
