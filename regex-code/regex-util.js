@@ -132,3 +132,4 @@ const regexPatterns = [{ uniqueWords: { description: "Find unique words in a tex
 const regexVariations = { spellingVariation: { description: "Matches different spelling variations", regex: /spelling|speling|spelng/i } };
 const morseCodeValidation = { morseCode: { description: "Validates Morse code inputs consisting of dots, dashes, and spaces", regex: /^[.-\s]+$/ } };
 const tweetIDRegex = { tweetID: { description: "Extract tweet IDs", regex: /(?<=status\/|\/)(\d{10,})/g } };
+const regexPatterns = []; regexPatterns.push({ key: "removeUnnecessaryPunctuation", description: "Find and remove unnecessary punctuation", regex: /[^\w\s]|(?<!\w)\s+|\s+(?!\w)/g });
