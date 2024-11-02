@@ -133,3 +133,4 @@ const regexVariations = { spellingVariation: { description: "Matches different s
 const morseCodeValidation = { morseCode: { description: "Validates Morse code inputs consisting of dots, dashes, and spaces", regex: /^[.-\s]+$/ } };
 const tweetIDRegex = { tweetID: { description: "Extract tweet IDs", regex: /(?<=status\/|\/)(\d{10,})/g } };
 const regexPatterns = []; regexPatterns.push({ key: "removeUnnecessaryPunctuation", description: "Find and remove unnecessary punctuation", regex: /[^\w\s]|(?<!\w)\s+|\s+(?!\w)/g });
+const commentsRegex = { cStyleComments: { description: "Matches C-style comments", regex: /\/\*[\s\S]*?\*\/|\/\/.*$/gm } };
