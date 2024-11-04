@@ -135,3 +135,4 @@ const tweetIDRegex = { tweetID: { description: "Extract tweet IDs", regex: /(?<=
 const regexPatterns = []; regexPatterns.push({ key: "removeUnnecessaryPunctuation", description: "Find and remove unnecessary punctuation", regex: /[^\w\s]|(?<!\w)\s+|\s+(?!\w)/g });
 const commentsRegex = { cStyleComments: { description: "Matches C-style comments", regex: /\/\*[\s\S]*?\*\/|\/\/.*$/gm } };
 const regexPatterns = []; regexPatterns.push({ hashtag: { description: "Validates hashtag formatting (must start with # followed by alphanumeric characters, underscores, or dashes)", regex: /^#[A-Za-z0-9_-]+$/ } });
+const domainExtensionsRegex = { domainExtensions: { description: "Matches domain extensions in URLs", regex: /\.\w{2,6}(\/|$)/ } };
