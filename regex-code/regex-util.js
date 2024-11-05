@@ -136,3 +136,4 @@ const regexPatterns = []; regexPatterns.push({ key: "removeUnnecessaryPunctuatio
 const commentsRegex = { cStyleComments: { description: "Matches C-style comments", regex: /\/\*[\s\S]*?\*\/|\/\/.*$/gm } };
 const regexPatterns = []; regexPatterns.push({ hashtag: { description: "Validates hashtag formatting (must start with # followed by alphanumeric characters, underscores, or dashes)", regex: /^#[A-Za-z0-9_-]+$/ } });
 const domainExtensionsRegex = { domainExtensions: { description: "Matches domain extensions in URLs", regex: /\.\w{2,6}(\/|$)/ } };
+const emailProviders = [{ gmail: { description: "Gmail provider", regex: /@gmail\.com$/ } }, { yahoo: { description: "Yahoo provider", regex: /@yahoo\.com$/ } }, { outlook: { description: "Outlook provider", regex: /@outlook\.com$/ } }];
