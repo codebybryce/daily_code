@@ -139,3 +139,4 @@ const domainExtensionsRegex = { domainExtensions: { description: "Matches domain
 const emailProviders = [{ gmail: { description: "Gmail provider", regex: /@gmail\.com$/ } }, { yahoo: { description: "Yahoo provider", regex: /@yahoo\.com$/ } }, { outlook: { description: "Outlook provider", regex: /@outlook\.com$/ } }];
 const regexPatterns = []; 
 regexPatterns.push({ sciNotation: { description: "Validates scientific notation numbers", regex: /^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)$/ } });
+const regexEntities = { htmlEntities: { description: "Matches HTML entity codes", regex: /&[a-zA-Z0-9#]+;/ } };
