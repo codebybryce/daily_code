@@ -140,3 +140,4 @@ const emailProviders = [{ gmail: { description: "Gmail provider", regex: /@gmail
 const regexPatterns = []; 
 regexPatterns.push({ sciNotation: { description: "Validates scientific notation numbers", regex: /^[+-]?(\d+(\.\d*)?|\.\d+)([eE][+-]?\d+)$/ } });
 const regexEntities = { htmlEntities: { description: "Matches HTML entity codes", regex: /&[a-zA-Z0-9#]+;/ } };
+const unitsRegex = [{ key: 'length', description: 'Finds length units', regex: /(\d+\.?\d*)\s*(m|cm|mm|km|ft|in)/gi }];
