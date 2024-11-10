@@ -142,3 +142,4 @@ regexPatterns.push({ sciNotation: { description: "Validates scientific notation 
 const regexEntities = { htmlEntities: { description: "Matches HTML entity codes", regex: /&[a-zA-Z0-9#]+;/ } };
 const unitsRegex = [{ key: 'length', description: 'Finds length units', regex: /(\d+\.?\d*)\s*(m|cm|mm|km|ft|in)/gi }];
 const regexPatterns = [{ id: { description: "Extract HTML ids", regex: /id=["']?([^"' >]+)["']?/g } }];
+const patterns = []; patterns.push({ headings: { description: "Matches markdown headings (H1-H6)", regex: /^#{1,6}\s.+/ } });
