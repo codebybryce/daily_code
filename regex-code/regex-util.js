@@ -146,3 +146,4 @@ const patterns = []; patterns.push({ headings: { description: "Matches markdown 
 const validations = []; validations.push({ lat_long: { description: "Valid Latitude and Longitude", regex: /^[-+]?([1-8]?\d(\.\d+)?|90(\.0+)?)\s*,\s*[-+]?((1[0-7]\d|\d{1,2})(\.\d+)?|180(\.0+)?)$/ } });
 const functionNamesRegex = { extractFunctionNames: { description: "Extracts function names from scripts", regex: /function\s+([a-zA-Z_$][0-9a-zA-Z_$]*)\s*\(/g } };
 const invalidChars = { invalidCharacters: { description: "Finds invalid characters", regex: /[^a-zA-Z0-9\s]/ } };
+const pluralPatterns = [{ plural: { description: "Matches regular plural forms", regex: /s$/ } }, { irregular: { description: "Matches irregular plural forms", regex: /(men|children|geese|feet|mice)$/ } }];
