@@ -147,3 +147,4 @@ const validations = []; validations.push({ lat_long: { description: "Valid Latit
 const functionNamesRegex = { extractFunctionNames: { description: "Extracts function names from scripts", regex: /function\s+([a-zA-Z_$][0-9a-zA-Z_$]*)\s*\(/g } };
 const invalidChars = { invalidCharacters: { description: "Finds invalid characters", regex: /[^a-zA-Z0-9\s]/ } };
 const pluralPatterns = [{ plural: { description: "Matches regular plural forms", regex: /s$/ } }, { irregular: { description: "Matches irregular plural forms", regex: /(men|children|geese|feet|mice)$/ } }];
+const mimeTypeValidation = { mimeType: { description: "Validates MIME types", regex: /^(application|audio|font|image|text|video)\/[a-zA-Z0-9!#$&+.^-]+$/ } };
