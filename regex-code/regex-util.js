@@ -149,3 +149,4 @@ const invalidChars = { invalidCharacters: { description: "Finds invalid characte
 const pluralPatterns = [{ plural: { description: "Matches regular plural forms", regex: /s$/ } }, { irregular: { description: "Matches irregular plural forms", regex: /(men|children|geese|feet|mice)$/ } }];
 const mimeTypeValidation = { mimeType: { description: "Validates MIME types", regex: /^(application|audio|font|image|text|video)\/[a-zA-Z0-9!#$&+.^-]+$/ } };
 const regexObjects = [{ key: 'jsVarNames', description: "Extract JavaScript variable names", regex: /(?<=\s|var\s|let\s|const\s)([a-zA-Z_$][0-9a-zA-Z_$]*)/g }];
+const regexArray = [{ escapedChars: { description: "Find escaped characters in text", regex: /\\[\"'\\bfnrtv]/ } }];
