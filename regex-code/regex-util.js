@@ -150,3 +150,4 @@ const pluralPatterns = [{ plural: { description: "Matches regular plural forms",
 const mimeTypeValidation = { mimeType: { description: "Validates MIME types", regex: /^(application|audio|font|image|text|video)\/[a-zA-Z0-9!#$&+.^-]+$/ } };
 const regexObjects = [{ key: 'jsVarNames', description: "Extract JavaScript variable names", regex: /(?<=\s|var\s|let\s|const\s)([a-zA-Z_$][0-9a-zA-Z_$]*)/g }];
 const regexArray = [{ escapedChars: { description: "Find escaped characters in text", regex: /\\[\"'\\bfnrtv]/ } }];
+const exchangeRateRegex = { currencyExchangeRate: { description: "Valid currency exchange rate", regex: /^\d+(\.\d{1,4})?$/ } };
