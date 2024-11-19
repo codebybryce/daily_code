@@ -151,3 +151,4 @@ const mimeTypeValidation = { mimeType: { description: "Validates MIME types", re
 const regexObjects = [{ key: 'jsVarNames', description: "Extract JavaScript variable names", regex: /(?<=\s|var\s|let\s|const\s)([a-zA-Z_$][0-9a-zA-Z_$]*)/g }];
 const regexArray = [{ escapedChars: { description: "Find escaped characters in text", regex: /\\[\"'\\bfnrtv]/ } }];
 const exchangeRateRegex = { currencyExchangeRate: { description: "Valid currency exchange rate", regex: /^\d+(\.\d{1,4})?$/ } };
+const regexArray = [{ htmlAttributeValues: { description: "Matches HTML attribute values", regex: /=\s*(['"])(.*?)\1/ }}];
