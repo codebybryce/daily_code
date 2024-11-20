@@ -152,3 +152,4 @@ const regexObjects = [{ key: 'jsVarNames', description: "Extract JavaScript vari
 const regexArray = [{ escapedChars: { description: "Find escaped characters in text", regex: /\\[\"'\\bfnrtv]/ } }];
 const exchangeRateRegex = { currencyExchangeRate: { description: "Valid currency exchange rate", regex: /^\d+(\.\d{1,4})?$/ } };
 const regexArray = [{ htmlAttributeValues: { description: "Matches HTML attribute values", regex: /=\s*(['"])(.*?)\1/ }}];
+const programmingKeywords = [{ keyword: { description: "Extract programming keywords", regex: /\b(?:if|else|for|while|function|return|const|let|var|class|import|export|async|await|try|catch|finally|switch|case|break|continue|default|throw|new|this|instanceof|typeof|void|delete|with|do|static|public|private|protected|interface|implements|yield|await|volatile|synchronized|namespace|extends|super)\b/g } }];
