@@ -154,3 +154,4 @@ const exchangeRateRegex = { currencyExchangeRate: { description: "Valid currency
 const regexArray = [{ htmlAttributeValues: { description: "Matches HTML attribute values", regex: /=\s*(['"])(.*?)\1/ }}];
 const programmingKeywords = [{ keyword: { description: "Extract programming keywords", regex: /\b(?:if|else|for|while|function|return|const|let|var|class|import|export|async|await|try|catch|finally|switch|case|break|continue|default|throw|new|this|instanceof|typeof|void|delete|with|do|static|public|private|protected|interface|implements|yield|await|volatile|synchronized|namespace|extends|super)\b/g } }];
 const regexPattern = /(?<=delimiter1)(.*?)(?=delimiter2)/g; const result = { findSubstrings: { description: "Find substrings between delimiter1 and delimiter2", regex: regexPattern } };
+const countryCodeValidation = { countryCode: { description: "Valid ISO 3166-1 alpha-2 country code", regex: /^[A-Z]{2}$/ } };
