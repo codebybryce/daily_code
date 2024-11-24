@@ -156,3 +156,4 @@ const programmingKeywords = [{ keyword: { description: "Extract programming keyw
 const regexPattern = /(?<=delimiter1)(.*?)(?=delimiter2)/g; const result = { findSubstrings: { description: "Find substrings between delimiter1 and delimiter2", regex: regexPattern } };
 const countryCodeValidation = { countryCode: { description: "Valid ISO 3166-1 alpha-2 country code", regex: /^[A-Z]{2}$/ } };
 const metaDescriptions = [...document.querySelectorAll('meta[name="description"]')].map((meta, index) => ({ [`metaDescription${index + 1}`]: { description: meta.content, regex: /<meta name="description" content="(.*?)"/ }} }));
+const regexArray = [{ fraction: { description: "Matches fraction representations", regex: /^\s*-?\d+\s*\/\s*-?\d+\s*$/ }}];
