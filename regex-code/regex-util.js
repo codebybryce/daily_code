@@ -157,3 +157,4 @@ const regexPattern = /(?<=delimiter1)(.*?)(?=delimiter2)/g; const result = { fin
 const countryCodeValidation = { countryCode: { description: "Valid ISO 3166-1 alpha-2 country code", regex: /^[A-Z]{2}$/ } };
 const metaDescriptions = [...document.querySelectorAll('meta[name="description"]')].map((meta, index) => ({ [`metaDescription${index + 1}`]: { description: meta.content, regex: /<meta name="description" content="(.*?)"/ }} }));
 const regexArray = [{ fraction: { description: "Matches fraction representations", regex: /^\s*-?\d+\s*\/\s*-?\d+\s*$/ }}];
+const ballotValidation = { votingBallot: { description: "Valid voting ballot format", regex: /^[A-Z]{3}-\d{4}-[A-Z]{2}$/ } };
