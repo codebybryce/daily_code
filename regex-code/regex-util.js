@@ -159,3 +159,4 @@ const metaDescriptions = [...document.querySelectorAll('meta[name="description"]
 const regexArray = [{ fraction: { description: "Matches fraction representations", regex: /^\s*-?\d+\s*\/\s*-?\d+\s*$/ }}];
 const ballotValidation = { votingBallot: { description: "Valid voting ballot format", regex: /^[A-Z]{3}-\d{4}-[A-Z]{2}$/ } };
 const regexPatterns = []; regexPatterns.push({ repeatedPhrases: { description: "Find repeated phrases", regex: /(\b\w+\b)(?=.*\1)/g } });
+const regexPatterns = [{ key: 'decimalExtractor', description: 'Extract decimal values from strings', regex: /\d+\.\d+/ }];
