@@ -160,3 +160,4 @@ const regexArray = [{ fraction: { description: "Matches fraction representations
 const ballotValidation = { votingBallot: { description: "Valid voting ballot format", regex: /^[A-Z]{3}-\d{4}-[A-Z]{2}$/ } };
 const regexPatterns = []; regexPatterns.push({ repeatedPhrases: { description: "Find repeated phrases", regex: /(\b\w+\b)(?=.*\1)/g } });
 const regexPatterns = [{ key: 'decimalExtractor', description: 'Extract decimal values from strings', regex: /\d+\.\d+/ }];
+const temperatureValidation = { temp: { description: "Valid temperature formats (e.g., 32C, 0F, -10.5K)", regex: /^[+-]?\d+(\.\d+)?[CFK]$/ } };
