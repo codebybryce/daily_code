@@ -162,3 +162,4 @@ const regexPatterns = []; regexPatterns.push({ repeatedPhrases: { description: "
 const regexPatterns = [{ key: 'decimalExtractor', description: 'Extract decimal values from strings', regex: /\d+\.\d+/ }];
 const temperatureValidation = { temp: { description: "Valid temperature formats (e.g., 32C, 0F, -10.5K)", regex: /^[+-]?\d+(\.\d+)?[CFK]$/ } };
 const regexPatterns = []; regexPatterns.push({ htmlComment: { description: "Matches HTML comments", regex: /<!--[\s\S]*?-->/ } });
+const cssClassExtractor = { cssClass: { description: "Extracts CSS class names", regex: /(?:\s|^)([a-zA-Z_][\w-]*)/g } };
