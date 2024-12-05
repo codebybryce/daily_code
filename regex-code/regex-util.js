@@ -167,3 +167,4 @@ const regexPatterns = []; regexPatterns.push({ pythonFunctionNames: { descriptio
 const regexArray = [{ romanNumerals: { description: "Matches roman numerals from I to MMMCMXCIX", regex: /^(M{0,3})(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/ } }];
 const isbnPatterns = [{ key: 'isbn', description: 'Extracts ISBN-10 and ISBN-13 numbers', regex: /(?:ISBN(?:-1[03])?:? )?(?=[-0-9 ]{10,17}$)(?:\d{9}[\dX]|\d{13})/g }];
 const chessNotationValidation = { chessNotation: { description: "Validates standard chess notation (e.g., e4, Nf3, Bb5)", regex: /^(?:[KQRBN]?[a-h]?[1-8]?x?[a-h][1-8](?:=[QRBN]?)?|O-O(-O)?|\d+\.\s*.+)$/ } };
+const regexPatterns = []; regexPatterns.push({ repeatingChars: { description: "Find repeating character sequences", regex: /(.)\1+/ } });
