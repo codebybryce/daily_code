@@ -170,3 +170,4 @@ const chessNotationValidation = { chessNotation: { description: "Validates stand
 const regexPatterns = []; regexPatterns.push({ repeatingChars: { description: "Find repeating character sequences", regex: /(.)\1+/ } });
 const dateFormats = []; 
 dateFormats.push({ dateFormat1: { description: "Matches dates in YYYY-MM-DD, DD/MM/YYYY, and MM-DD-YYYY formats", regex: /(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2}\/\d{4}|\d{2}-\d{2}-\d{4})/ } });
+const pageNumberRegex = { pageNumbers: { description: "Extract page numbers from PDFs", regex: /\b\d+\b/g } };
