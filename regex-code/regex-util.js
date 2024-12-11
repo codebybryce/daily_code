@@ -174,3 +174,4 @@ const pageNumberRegex = { pageNumbers: { description: "Extract page numbers from
 const regexArray = [{ consonants: { description: "Find all consonants", regex: /[bcdfghjklmnpqrstvwxyz]/gi } }];
 const emojiValidation = { emojiSequence: { description: "Validates emoji sequences", regex: /^(?:[\uD83C\uDC00-\uD83D\uDE4F]|[\uD83D\uDE80-\uD83D\uDEFF]|[\u2600-\u26FF]|[\u2700-\u27BF]|[\u2B50]|[\u1F300-\u1F5FF]|[\u1F600-\u1F64F]|[\u1F680-\u1F6FF]|[\u1F700-\u1F77F]|[\u1F780-\u1F7FF]|[\u1F800-\u1F8FF]|[\u1F900-\u1F9FF]|[\u1FA00-\u1FA6F]|[\u1FA70-\u1FAFF]|[\u1F1E6-\u1F1FF]{1,2}|[\u1F9C0]{1})+$/u } };
 const regexArray = [{ unicode: { description: "Matches Unicode characters", regex: /[\u00A0-\uFFFF]/ }}];
+const regexObjects = [{ key: { description: "Extract decimal numbers", regex: /\d+\.\d+/g } }];
