@@ -176,3 +176,4 @@ const emojiValidation = { emojiSequence: { description: "Validates emoji sequenc
 const regexArray = [{ unicode: { description: "Matches Unicode characters", regex: /[\u00A0-\uFFFF]/ }}];
 const regexObjects = [{ key: { description: "Extract decimal numbers", regex: /\d+\.\d+/g } }];
 const ipAddressRanges = [{ key: 'ipv4', description: 'Validates IPv4 address ranges', regex: /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/ }];
+const htmlEntitiesRegex = { htmlEntities: { description: "Find and replace HTML entities", regex: /&(#?)([a-zA-Z0-9]+);/g } };
