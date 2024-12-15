@@ -179,3 +179,4 @@ const ipAddressRanges = [{ key: 'ipv4', description: 'Validates IPv4 address ran
 const htmlEntitiesRegex = { htmlEntities: { description: "Find and replace HTML entities", regex: /&(#?)([a-zA-Z0-9]+);/g } };
 const regexPatterns = []; 
 regexPatterns.push({ latexEquation: { description: "Matches LaTeX equations within $...$ or $$...$$", regex: /\$[^$]+\$|\$\$[^$]+\$\$/ } });
+const timeZoneValidation = { tz: { description: "Validates time zones in the format 'Region/City'", regex: /^(?:[A-Z][a-z]+(?:\/[A-Za-z_]+)+|[A-Z]{2})$/ } };
