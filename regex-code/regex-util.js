@@ -180,3 +180,4 @@ const htmlEntitiesRegex = { htmlEntities: { description: "Find and replace HTML 
 const regexPatterns = []; 
 regexPatterns.push({ latexEquation: { description: "Matches LaTeX equations within $...$ or $$...$$", regex: /\$[^$]+\$|\$\$[^$]+\$\$/ } });
 const timeZoneValidation = { tz: { description: "Validates time zones in the format 'Region/City'", regex: /^(?:[A-Z][a-z]+(?:\/[A-Za-z_]+)+|[A-Z]{2})$/ } };
+const metaTagsRegex = { metaTags: { description: "Extracts meta tags from HTML", regex: /<meta\s+([^>]+?)\/?>/gi } };
