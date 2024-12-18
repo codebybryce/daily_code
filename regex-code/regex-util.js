@@ -182,3 +182,4 @@ regexPatterns.push({ latexEquation: { description: "Matches LaTeX equations with
 const timeZoneValidation = { tz: { description: "Validates time zones in the format 'Region/City'", regex: /^(?:[A-Z][a-z]+(?:\/[A-Za-z_]+)+|[A-Z]{2})$/ } };
 const metaTagsRegex = { metaTags: { description: "Extracts meta tags from HTML", regex: /<meta\s+([^>]+?)\/?>/gi } };
 const functions = [{ findFunctionDefinitions: { description: "Finds JavaScript function definitions", regex: /function\s+\w+\s*\(.*?\)\s*{|\w+\s*=\s*function\s*\(.*?\)\s*{|(\w+)\s*:\s*function\s*\(.*?\)\s*{/g } }];
+const regexPatterns = [{ multiLineComment: { description: "Matches multi-line comments in code", regex: /\/\*[\s\S]*?\*\//g } }];
