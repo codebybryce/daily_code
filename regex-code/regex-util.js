@@ -183,3 +183,4 @@ const timeZoneValidation = { tz: { description: "Validates time zones in the for
 const metaTagsRegex = { metaTags: { description: "Extracts meta tags from HTML", regex: /<meta\s+([^>]+?)\/?>/gi } };
 const functions = [{ findFunctionDefinitions: { description: "Finds JavaScript function definitions", regex: /function\s+\w+\s*\(.*?\)\s*{|\w+\s*=\s*function\s*\(.*?\)\s*{|(\w+)\s*:\s*function\s*\(.*?\)\s*{/g } }];
 const regexPatterns = [{ multiLineComment: { description: "Matches multi-line comments in code", regex: /\/\*[\s\S]*?\*\//g } }];
+const couponValidation = { couponCode: { description: "Valid coupon codes must start with 'SAVE', followed by 3 digits, and end with an uppercase letter.", regex: /^SAVE\d{3}[A-Z]$/ } };
