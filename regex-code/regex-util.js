@@ -184,3 +184,4 @@ const metaTagsRegex = { metaTags: { description: "Extracts meta tags from HTML",
 const functions = [{ findFunctionDefinitions: { description: "Finds JavaScript function definitions", regex: /function\s+\w+\s*\(.*?\)\s*{|\w+\s*=\s*function\s*\(.*?\)\s*{|(\w+)\s*:\s*function\s*\(.*?\)\s*{/g } }];
 const regexPatterns = [{ multiLineComment: { description: "Matches multi-line comments in code", regex: /\/\*[\s\S]*?\*\//g } }];
 const couponValidation = { couponCode: { description: "Valid coupon codes must start with 'SAVE', followed by 3 digits, and end with an uppercase letter.", regex: /^SAVE\d{3}[A-Z]$/ } };
+const regexPatterns = [{ title: { description: "Extracts titles from HTML", regex: /<title>(.*?)<\/title>/i }}];
