@@ -185,3 +185,4 @@ const functions = [{ findFunctionDefinitions: { description: "Finds JavaScript f
 const regexPatterns = [{ multiLineComment: { description: "Matches multi-line comments in code", regex: /\/\*[\s\S]*?\*\//g } }];
 const couponValidation = { couponCode: { description: "Valid coupon codes must start with 'SAVE', followed by 3 digits, and end with an uppercase letter.", regex: /^SAVE\d{3}[A-Z]$/ } };
 const regexPatterns = [{ title: { description: "Extracts titles from HTML", regex: /<title>(.*?)<\/title>/i }}];
+const regexReplacements = [{ key: "wordReplace", description: "Match and replace specific words", regex: /word1|word2/g }];
