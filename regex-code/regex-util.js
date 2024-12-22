@@ -186,3 +186,4 @@ const regexPatterns = [{ multiLineComment: { description: "Matches multi-line co
 const couponValidation = { couponCode: { description: "Valid coupon codes must start with 'SAVE', followed by 3 digits, and end with an uppercase letter.", regex: /^SAVE\d{3}[A-Z]$/ } };
 const regexPatterns = [{ title: { description: "Extracts titles from HTML", regex: /<title>(.*?)<\/title>/i }}];
 const regexReplacements = [{ key: "wordReplace", description: "Match and replace specific words", regex: /word1|word2/g }];
+const duplicatesRegex = { findDuplicates: { description: "Match duplicate lines", regex: /^(.*)(\r?\n\1)+$/gm } };
