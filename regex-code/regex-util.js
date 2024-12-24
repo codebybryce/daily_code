@@ -188,3 +188,4 @@ const regexPatterns = [{ title: { description: "Extracts titles from HTML", rege
 const regexReplacements = [{ key: "wordReplace", description: "Match and replace specific words", regex: /word1|word2/g }];
 const duplicatesRegex = { findDuplicates: { description: "Match duplicate lines", regex: /^(.*)(\r?\n\1)+$/gm } };
 const urlParamValidation = { urlParam: { description: "Validates URL parameters", regex: /[?&][^=#]+=[^&#]*/ } };
+const regexObjects = []; regexObjects.push({ extractNumbers: { description: "Extract numbers from alphanumeric strings", regex: /\d+/g } });
