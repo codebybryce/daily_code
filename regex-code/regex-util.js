@@ -189,3 +189,4 @@ const regexReplacements = [{ key: "wordReplace", description: "Match and replace
 const duplicatesRegex = { findDuplicates: { description: "Match duplicate lines", regex: /^(.*)(\r?\n\1)+$/gm } };
 const urlParamValidation = { urlParam: { description: "Validates URL parameters", regex: /[?&][^=#]+=[^&#]*/ } };
 const regexObjects = []; regexObjects.push({ extractNumbers: { description: "Extract numbers from alphanumeric strings", regex: /\d+/g } });
+const patterns = [{ key: 'dna', description: 'Match DNA sequences', regex: /^[ACGT]+$/ }];
