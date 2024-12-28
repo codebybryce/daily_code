@@ -192,3 +192,4 @@ const regexObjects = []; regexObjects.push({ extractNumbers: { description: "Ext
 const patterns = [{ key: 'dna', description: 'Match DNA sequences', regex: /^[ACGT]+$/ }];
 const hashtagsRegex = { hashtags: { description: "Find all hashtags in a tweet", regex: /#\w+/g } };
 const stockTickerValidation = { stockTicker: { description: "Validates stock ticker symbols (1 to 5 uppercase letters)", regex: /^[A-Z]{1,5}$/ } };
+const markdownLinksRegex = { markdownLinks: { description: "Extract Markdown links", regex: /\[([^\]]+)\]\(([^)]+)\)/g } };
