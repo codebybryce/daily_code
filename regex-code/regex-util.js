@@ -193,3 +193,4 @@ const patterns = [{ key: 'dna', description: 'Match DNA sequences', regex: /^[AC
 const hashtagsRegex = { hashtags: { description: "Find all hashtags in a tweet", regex: /#\w+/g } };
 const stockTickerValidation = { stockTicker: { description: "Validates stock ticker symbols (1 to 5 uppercase letters)", regex: /^[A-Z]{1,5}$/ } };
 const markdownLinksRegex = { markdownLinks: { description: "Extract Markdown links", regex: /\[([^\]]+)\]\(([^)]+)\)/g } };
+const morseCodePattern = { morse: { description: "Matches Morse code sequences consisting of dots, dashes, and spaces", regex: /^[.-\s]+$/ } };
