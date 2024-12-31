@@ -195,3 +195,4 @@ const stockTickerValidation = { stockTicker: { description: "Validates stock tic
 const markdownLinksRegex = { markdownLinks: { description: "Extract Markdown links", regex: /\[([^\]]+)\]\(([^)]+)\)/g } };
 const morseCodePattern = { morse: { description: "Matches Morse code sequences consisting of dots, dashes, and spaces", regex: /^[.-\s]+$/ } };
 const regexPalindromes = { palindrome: { description: "Matches palindromes", regex: /^(?:(.)(?:(?!(\1)).|(?R))*(?=\1)\1)$|^(?!.*(.).*\2)(?:(.)(?:(?!(\3)).|(?R))*(?=\3)\3)$/i } };
+const csvData = `key1,value1,value2\nkey2,value3,value4`; const result = csvData.split('\n').map(line => { const [key, ...values] = line.split(','); return { [key]: { description: `Data for ${key}`, regex: new RegExp(values.join(',')) } }; }); 
