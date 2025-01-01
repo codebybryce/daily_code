@@ -9,9 +9,6 @@ import { error } from "node:console";
 import 'dotenv/config'
 
 const git = simpleGit(path.resolve())
-
-console.log(git)
-
 const openai = new OpenAI({ apiKey: process.env.CHAT_GPT_API_KEY });
 const useCases = [
     "Match phone numbers",
@@ -292,7 +289,7 @@ async function processWithDelay(arr, delayTimeMinutes) {
 
 async function handleCommit(message, time){
     git.add('.')
-    .commit('git commit -m "Test Commit" --time=2025-02-07T11:17:04-05:00')
+    .commit("Test Commit",{"--date":"2025-01-01T21:48:34.493Z"})
     .push()
 }
     
