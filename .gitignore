@@ -1,8 +1,9 @@
 node_modules/
 ./services*
 update.js
-updateRegex.js
+./updateRegex.js
 
 
 dist/
 *.env
+

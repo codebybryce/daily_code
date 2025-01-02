@@ -260,10 +260,9 @@ const generateRegex = async (useCase) => {
 }
 
 
-async function appendRegexFile(message, index) {
-    const repoPath = path.resolve('/Users/brycerobinson/gh-app/daily_code/regex-code')
+async function appendRegexFile(message) {
+    const repoPath = path.resolve('./gh-app/daily_code/regex-code')
     const fileName = 'regex-util.js'
-    const ghTime = dayjs().subtract(index, 'day').format();
     fs.appendFileSync(path.join(repoPath, fileName), message);
 }
 
@@ -278,19 +277,20 @@ function delay(minutes) {
     return new Promise(resolve => setTimeout(resolve, ms))
 }
 
+async function handleCommit(message, time){
+    git.add('.')
+    .commit("Test Commit",{"--date":"2025-01-02T21:48:34.493Z"},(error => error && console.error(error)))
+    .push('origin', 'main', (error)=>error && console.error(error))
+}
+
 async function processWithDelay(arr, delayTimeMinutes) {
     for (let itemIndex = arr.length; itemIndex > 0; itemIndex--) {
         processItem(arr[itemIndex], itemIndex);
+
         await delay(delayTimeMinutes)
     }
 }
 
 //processWithDelay(useCases, 5)
 
-async function handleCommit(message, time){
-    git.add('.')
-    .commit("Test Commit",{"--date":"2025-01-01T21:48:34.493Z"})
-    .push()
-}
-    
-handleCommit('Test Commit', dayjs().format())
+handleCommit()
