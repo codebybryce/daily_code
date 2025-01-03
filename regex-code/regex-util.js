@@ -198,3 +198,4 @@ const regexPalindromes = { palindrome: { description: "Matches palindromes", reg
 const csvData = `key1,value1,value2\nkey2,value3,value4`; const result = csvData.split('\n').map(line => { const [key, ...values] = line.split(','); return { [key]: { description: `Data for ${key}`, regex: new RegExp(values.join(',')) } }; }); 
 const validations = []; validations.push({ email: { description: "Validates an email address", regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ } });
 const sqlQueryRegex = { sqlQuery: { description: "Matches SQL queries", regex: /^(SELECT|INSERT|UPDATE|DELETE)\s+.*?;?$/i } };
+const regexArray = [{ extractHtmlTags: { description: "Extract HTML tags", regex: /<[^>]+>/g } }];
