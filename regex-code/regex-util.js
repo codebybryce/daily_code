@@ -199,3 +199,4 @@ const csvData = `key1,value1,value2\nkey2,value3,value4`; const result = csvData
 const validations = []; validations.push({ email: { description: "Validates an email address", regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/ } });
 const sqlQueryRegex = { sqlQuery: { description: "Matches SQL queries", regex: /^(SELECT|INSERT|UPDATE|DELETE)\s+.*?;?$/i } };
 const regexArray = [{ extractHtmlTags: { description: "Extract HTML tags", regex: /<[^>]+>/g } }];
+const isbnValidation = { isbn: { description: "Validates ISBN-10 and ISBN-13 numbers", regex: /^(?:ISBN(?:-1[03])?:? )?(?=[0-9]{9}[0-9X]$|(?=(?:[0-9]+[- ]){4})[0-9]+[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$)(?:[0-9]+[- ]){3}[0-9]+[- ]?[0-9X]$|(?=[0-9]{13}$)(?:[0-9]+[- ]?){4}[0-9]{13}$/ } };
