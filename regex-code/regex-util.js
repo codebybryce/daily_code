@@ -200,3 +200,4 @@ const validations = []; validations.push({ email: { description: "Validates an e
 const sqlQueryRegex = { sqlQuery: { description: "Matches SQL queries", regex: /^(SELECT|INSERT|UPDATE|DELETE)\s+.*?;?$/i } };
 const regexArray = [{ extractHtmlTags: { description: "Extract HTML tags", regex: /<[^>]+>/g } }];
 const isbnValidation = { isbn: { description: "Validates ISBN-10 and ISBN-13 numbers", regex: /^(?:ISBN(?:-1[03])?:? )?(?=[0-9]{9}[0-9X]$|(?=(?:[0-9]+[- ]){4})[0-9]+[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$)(?:[0-9]+[- ]){3}[0-9]+[- ]?[0-9X]$|(?=[0-9]{13}$)(?:[0-9]+[- ]?){4}[0-9]{13}$/ } };
+const regexArray = [{ mathExpression: { description: "Matches basic mathematical expressions including addition, subtraction, multiplication, and division", regex: /^[\d\s\+\-\*\/\(\)]+$/ } }];
