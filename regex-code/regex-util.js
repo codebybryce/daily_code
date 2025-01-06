@@ -201,3 +201,4 @@ const sqlQueryRegex = { sqlQuery: { description: "Matches SQL queries", regex: /
 const regexArray = [{ extractHtmlTags: { description: "Extract HTML tags", regex: /<[^>]+>/g } }];
 const isbnValidation = { isbn: { description: "Validates ISBN-10 and ISBN-13 numbers", regex: /^(?:ISBN(?:-1[03])?:? )?(?=[0-9]{9}[0-9X]$|(?=(?:[0-9]+[- ]){4})[0-9]+[- ]?[0-9]+[- ]?[0-9]+[- ]?[0-9X]$)(?:[0-9]+[- ]){3}[0-9]+[- ]?[0-9X]$|(?=[0-9]{13}$)(?:[0-9]+[- ]?){4}[0-9]{13}$/ } };
 const regexArray = [{ mathExpression: { description: "Matches basic mathematical expressions including addition, subtraction, multiplication, and division", regex: /^[\d\s\+\-\*\/\(\)]+$/ } }];
+const regexArray = [{ guid: { description: "Validates a GUID/UUID", regex: /^[{]?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}[}]?$/ } }];
