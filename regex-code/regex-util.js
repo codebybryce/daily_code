@@ -203,3 +203,4 @@ const isbnValidation = { isbn: { description: "Validates ISBN-10 and ISBN-13 num
 const regexArray = [{ mathExpression: { description: "Matches basic mathematical expressions including addition, subtraction, multiplication, and division", regex: /^[\d\s\+\-\*\/\(\)]+$/ } }];
 const regexArray = [{ guid: { description: "Validates a GUID/UUID", regex: /^[{]?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}[}]?$/ } }];
 const regexPattern = { extractParentheses: { description: "Extract text inside parentheses", regex: /\(([^)]+)\)/g } };
+const profanityFilter = { profanity: { description: "Regex to find and replace profanity", regex: /(?:\b(?:damn|hell|shit|fuck|bitch)\b)/gi } };
