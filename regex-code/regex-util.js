@@ -204,3 +204,4 @@ const regexArray = [{ mathExpression: { description: "Matches basic mathematical
 const regexArray = [{ guid: { description: "Validates a GUID/UUID", regex: /^[{]?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-5][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}[}]?$/ } }];
 const regexPattern = { extractParentheses: { description: "Extract text inside parentheses", regex: /\(([^)]+)\)/g } };
 const profanityFilter = { profanity: { description: "Regex to find and replace profanity", regex: /(?:\b(?:damn|hell|shit|fuck|bitch)\b)/gi } };
+const regexArray = []; regexArray.push({ ssn: { description: "Social Security Number", regex: /^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$/ } });
