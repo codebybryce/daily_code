@@ -207,3 +207,4 @@ const profanityFilter = { profanity: { description: "Regex to find and replace p
 const regexArray = []; regexArray.push({ ssn: { description: "Social Security Number", regex: /^(?!666|000|9\d{2})\d{3}-(?!00)\d{2}-(?!0{4})\d{4}$/ } });
 const regexPatterns = []; regexPatterns.push({ usernameExtractor: { description: "Extract usernames from emails", regex: /^(.*?)@/ } });
 const regexArray = [{ binaryValidation: { description: "Validates binary numbers", regex: /^[01]+$/ } }];
+const regexArray = [{ key: { description: "Words ending with 'ing'", regex: /\b\w+ing\b/g } }];
