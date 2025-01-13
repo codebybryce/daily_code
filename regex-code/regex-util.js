@@ -208,3 +208,4 @@ const regexArray = []; regexArray.push({ ssn: { description: "Social Security Nu
 const regexPatterns = []; regexPatterns.push({ usernameExtractor: { description: "Extract usernames from emails", regex: /^(.*?)@/ } });
 const regexArray = [{ binaryValidation: { description: "Validates binary numbers", regex: /^[01]+$/ } }];
 const regexArray = [{ key: { description: "Words ending with 'ing'", regex: /\b\w+ing\b/g } }];
+const fileExtensionValidator = { fileExt: { description: "Validates common file extensions", regex: /\.(jpg|jpeg|png|gif|pdf|doc|docx|xls|xlsx|ppt|pptx|txt)$/i } };
