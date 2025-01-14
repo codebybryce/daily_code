@@ -209,3 +209,4 @@ const regexPatterns = []; regexPatterns.push({ usernameExtractor: { description:
 const regexArray = [{ binaryValidation: { description: "Validates binary numbers", regex: /^[01]+$/ } }];
 const regexArray = [{ key: { description: "Words ending with 'ing'", regex: /\b\w+ing\b/g } }];
 const fileExtensionValidator = { fileExt: { description: "Validates common file extensions", regex: /\.(jpg|jpeg|png|gif|pdf|doc|docx|xls|xlsx|ppt|pptx|txt)$/i } };
+const currencyRegex = { currency: { description: "Matches currency values", regex: /\$\d+(?:,\d{3})*(?:\.\d{2})?/ } };
