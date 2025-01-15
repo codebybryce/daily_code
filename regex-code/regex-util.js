@@ -210,3 +210,4 @@ const regexArray = [{ binaryValidation: { description: "Validates binary numbers
 const regexArray = [{ key: { description: "Words ending with 'ing'", regex: /\b\w+ing\b/g } }];
 const fileExtensionValidator = { fileExt: { description: "Validates common file extensions", regex: /\.(jpg|jpeg|png|gif|pdf|doc|docx|xls|xlsx|ppt|pptx|txt)$/i } };
 const currencyRegex = { currency: { description: "Matches currency values", regex: /\$\d+(?:,\d{3})*(?:\.\d{2})?/ } };
+const regexObject = { extractQuotedText: { description: "Extract quoted text from a sentence", regex: /"([^"]*)"/g } };
