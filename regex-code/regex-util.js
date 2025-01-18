@@ -213,3 +213,4 @@ const currencyRegex = { currency: { description: "Matches currency values", rege
 const regexObject = { extractQuotedText: { description: "Extract quoted text from a sentence", regex: /"([^"]*)"/g } };
 const validations = []; validations.push({ youtube: { description: "Validates YouTube video URLs", regex: /^(https?:\/\/)?(www\.)?(youtube\.com\/(watch\?v=|embed\/|v\/|.+\?.+v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})$/ } });
 const regexPatterns = [{ key: "capitalWords", description: "Matches words starting with a capital letter", regex: /^[A-Z]\w*/ }];
+const regexArray = [{ vowels: { description: "Find all vowels in a sentence", regex: /[aeiou]/gi } }];
