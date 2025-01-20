@@ -215,3 +215,4 @@ const validations = []; validations.push({ youtube: { description: "Validates Yo
 const regexPatterns = [{ key: "capitalWords", description: "Matches words starting with a capital letter", regex: /^[A-Z]\w*/ }];
 const regexArray = [{ vowels: { description: "Find all vowels in a sentence", regex: /[aeiou]/gi } }];
 const regexArray = [{ macAddress: { description: "Validate MAC addresses", regex: /^(?:[0-9a-fA-F]{2}[:-]){5}(?:[0-9a-fA-F]{2})$/ } }];
+const regexPatterns = [{ imageUrls: { description: "Extract image URLs from HTML", regex: /<img[^>]+src="([^">]+)"/g } }];
