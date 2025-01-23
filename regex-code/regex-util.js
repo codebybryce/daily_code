@@ -218,3 +218,4 @@ const regexArray = [{ macAddress: { description: "Validate MAC addresses", regex
 const regexPatterns = [{ imageUrls: { description: "Extract image URLs from HTML", regex: /<img[^>]+src="([^">]+)"/g } }];
 const jsonValidationRegex = { jsonValidation: { description: "Validates JSON format", regex: /^\s*(\{.*\}|\[.*\])\s*$/ } };
 const regexPatterns = [{ links: { description: "Find links in HTML", regex: /<a\s+(?:[^>]*?\s+)?href="([^"]*)"/g } }];
+const regexPatterns = []; regexPatterns.push({ removeExtraWhitespace: { description: "Remove extra whitespace", regex: /\s+/g } });
