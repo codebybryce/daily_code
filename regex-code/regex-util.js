@@ -219,3 +219,4 @@ const regexPatterns = [{ imageUrls: { description: "Extract image URLs from HTML
 const jsonValidationRegex = { jsonValidation: { description: "Validates JSON format", regex: /^\s*(\{.*\}|\[.*\])\s*$/ } };
 const regexPatterns = [{ links: { description: "Find links in HTML", regex: /<a\s+(?:[^>]*?\s+)?href="([^"]*)"/g } }];
 const regexPatterns = []; regexPatterns.push({ removeExtraWhitespace: { description: "Remove extra whitespace", regex: /\s+/g } });
+const passwordValidation = { strongPassword: { description: "Validates strong passwords (at least 8 characters, including uppercase, lowercase, numbers, and special characters)", regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/ } };
