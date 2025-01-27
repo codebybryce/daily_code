@@ -222,3 +222,4 @@ const regexPatterns = []; regexPatterns.push({ removeExtraWhitespace: { descript
 const passwordValidation = { strongPassword: { description: "Validates strong passwords (at least 8 characters, including uppercase, lowercase, numbers, and special characters)", regex: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/ } };
 const timePattern = { time: { description: "Matches time in HH:MM format", regex: /^(?:[01]\d|2[0-3]):[0-5]\d$/ } };
 const mentionsRegex = { mentions: { description: "Extracts user mentions from tweets", regex: /@(\w+)/g } };
+const regexArray = [{ key: { description: "Find all uppercase words", regex: /\b[A-Z]+\b/g } }];
