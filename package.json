@@ -1,0 +1,15 @@
+{
+  "name": "daily_code",
+  "version": "1.0.0",
+  "description": "Daily_code scripts",
+  "main": "update.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "simple-git": "^3.27.0"
+  }
+}
