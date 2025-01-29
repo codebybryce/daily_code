@@ -225,3 +225,4 @@ const mentionsRegex = { mentions: { description: "Extracts user mentions from tw
 const regexArray = [{ key: { description: "Find all uppercase words", regex: /\b[A-Z]+\b/g } }];
 const validators = []; 
 validators.push({ creditCard: { description: "Validate credit card numbers", regex: /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9]{2})[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|3[89][0-9]{12}|6(?:011|5[0-9]{2})[0-9]{12}|(2131|1800|35\d{3})\d{11})$/ } });
+const regexArray = [{ hexColor: { description: "Matches hexadecimal color codes", regex: /^#(?:[0-9a-fA-F]{3}){1,2}$/ } }];
