@@ -230,3 +230,5 @@ const dateRegex = { dateExtractor: { description: "Extracts dates in various for
 const regexObjects = [{ key: 'numbers', description: 'Find all numbers in a string', regex: /\d+/g }];
 const regexArray = []; 
 regexArray.push({ ipv6: { description: "Validates IPv6 addresses", regex: /^(?:[0-9a-fA-F]{1,4}:){7}[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,7}:|(?:[0-9a-fA-F]{1,4}:){1,6}:[0-9a-fA-F]{1,4}|(?:[0-9a-fA-F]{1,4}:){1,5}(?:[0-9a-fA-F]{1,4}:){1,2}|(?:[0-9a-fA-F]{1,4}:){1,4}(?:[0-9a-fA-F]{1,4}:){1,3}|(?:[0-9a-fA-F]{1,4}:){1,3}(?:[0-9a-fA-F]{1,4}:){1,4}|(?:[0-9a-fA-F]{1,4}:){1,2}(?:[0-9a-fA-F]{1,4}:){1,5}|[0-9a-fA-F]{1,4}:(?:[0-9a-fA-F]{1,4}:){1,6}|:((?:[0-9a-fA-F]{1,4}:){1,7}|:)|fe80:(?:%[0-9a-zA-Z]{1,}|::[0-9a-fA-F]{1,4})|::(?:ffff:(?:[0-9]{1,3}\.){3}[0-9]{1,3})|(?:[0-9a-fA-F]{1,4}:){1,4}:(?:[0-9]{1,3}\.){3}[0-9]{1,3}$/ } });
+const regexPatterns = []; 
+regexPatterns.push({ ipv4: { description: "Validate IPv4 addresses", regex: /^(25[0-5]|2[0-4][0- sted0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/ } });
