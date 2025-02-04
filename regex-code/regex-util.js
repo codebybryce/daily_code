@@ -233,3 +233,4 @@ regexArray.push({ ipv6: { description: "Validates IPv6 addresses", regex: /^(?:[
 const regexPatterns = []; 
 regexPatterns.push({ ipv4: { description: "Validate IPv4 addresses", regex: /^(25[0-5]|2[0-4][0- sted0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/ } });
 const hashtagsRegex = { hashtags: { description: "Extract hashtags from social media posts", regex: /#(\w+)/g } };
+const duplicatesRegex = { findDuplicates: { description: "Find duplicate words in a text", regex: /\b(\w+)\b(?=.*\b\1\b)/g } };
