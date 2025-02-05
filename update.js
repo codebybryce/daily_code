@@ -2,13 +2,16 @@ const path = require('node:path');
 const fs = require('node:fs')
 const { exec } = require('child_process')
 const simpleGit = require('simple-git')
+const dayjs = require('dayjs')
 
+dayjs().format()
 function dailyUpdate(){
     const repoPath = path.resolve(__dirname);
     const fileName = 'daily-log.txt';
 
     const now = new Date();
     const timestamp = now.toISOString();
+    
 
     fs.appendFileSync(path.join(repoPath, fileName), `Updated on: ${timestamp}\n`);
 
@@ -25,4 +28,6 @@ function dailyUpdate(){
     })
 }
 
-dailyUpdate()
+//dailyUpdate()
+//YYYY-MM-DD HH:MM:SS
+console.log(dayjs().subtract(1,'day').format())

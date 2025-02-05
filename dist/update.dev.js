@@ -9,6 +9,10 @@ var _require = require('child_process'),
 
 var simpleGit = require('simple-git');
 
+var dayjs = require('dayjs');
+
+dayjs().format();
+
 function dailyUpdate() {
   var repoPath = path.resolve(__dirname);
   var fileName = 'daily-log.txt';
@@ -23,6 +27,8 @@ function dailyUpdate() {
       console.log('Update Successful');
     }
   });
-}
+} //dailyUpdate()
+//YYYY-MM-DD HH:MM:SS
 
-dailyUpdate();
+
+console.log(dayjs().subtract(1, 'day').format());
