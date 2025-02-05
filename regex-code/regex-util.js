@@ -234,3 +234,4 @@ const regexPatterns = [];
 regexPatterns.push({ ipv4: { description: "Validate IPv4 addresses", regex: /^(25[0-5]|2[0-4][0- sted0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/ } });
 const hashtagsRegex = { hashtags: { description: "Extract hashtags from social media posts", regex: /#(\w+)/g } };
 const duplicatesRegex = { findDuplicates: { description: "Find duplicate words in a text", regex: /\b(\w+)\b(?=.*\b\1\b)/g } };
+const postalCodeValidation = { postalCode: { description: "Valid postal code (5 digits or 5 digits-4)", regex: /^\d{5}(-\d{4})?$/ } };
