@@ -12,7 +12,6 @@ function dailyUpdate(){
     const now = new Date();
     const timestamp = now.toISOString();
     
-
     fs.appendFileSync(path.join(repoPath, fileName), `Updated on: ${timestamp}\n`);
 
     const git = simpleGit(repoPath);
@@ -27,6 +26,8 @@ function dailyUpdate(){
         }
     })
 }
+
+
 
 //dailyUpdate()
 //YYYY-MM-DD HH:MM:SS
