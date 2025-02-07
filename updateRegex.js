@@ -292,7 +292,7 @@ async function processWithDelay(arr, delayTimeMinutes) {
 
 async function handleCommit(message, time){
     git.add('.')
-    .commit('Test')
+    .commit('git commit -m "Test Commit" --time=2025-02-07T11:17:04-05:00')
     .push()
 }
     
