@@ -249,3 +249,4 @@ const regexPatterns = [{ serialNumber: { description: "Matches serial numbers", 
 const serialNumberPattern = { serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{2}-[0-9]{4}/g } };
 const regexArray = [{ serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}/ } }];
 const regexObjects = [{ key: { description: "Match serial numbers", regex: /\b[A-Z0-9]{2,5}-\d{3,6}-[A-Z]{1,2}\b/ } }];
+const regexArray = [{ findText: { description: "Find text between quotation marks", regex: /"([^"]*)"/g } }];
