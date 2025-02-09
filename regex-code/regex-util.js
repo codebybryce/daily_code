@@ -247,3 +247,4 @@ const serialNumberPattern = { serialNumber: { description: "Matches serial numbe
 const serialNumberRegex = { serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}/ } };
 const regexPatterns = [{ serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}/ } }];
 const serialNumberPattern = { serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{2}-[0-9]{4}/g } };
+const regexArray = [{ serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}/ } }];
