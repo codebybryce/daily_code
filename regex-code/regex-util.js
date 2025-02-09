@@ -250,3 +250,4 @@ const serialNumberPattern = { serialNumber: { description: "Matches serial numbe
 const regexArray = [{ serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{3}/ } }];
 const regexObjects = [{ key: { description: "Match serial numbers", regex: /\b[A-Z0-9]{2,5}-\d{3,6}-[A-Z]{1,2}\b/ } }];
 const regexArray = [{ findText: { description: "Find text between quotation marks", regex: /"([^"]*)"/g } }];
+const youtubeIdRegex = { youtubeId: { description: "Extract YouTube video IDs", regex: /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/ } };
