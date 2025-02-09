@@ -236,3 +236,8 @@ const hashtagsRegex = { hashtags: { description: "Extract hashtags from social m
 const duplicatesRegex = { findDuplicates: { description: "Find duplicate words in a text", regex: /\b(\w+)\b(?=.*\b\1\b)/g } };
 const postalCodeValidation = { postalCode: { description: "Valid postal code (5 digits or 5 digits-4)", regex: /^\d{5}(-\d{4})?$/ } };
 const regexPatterns = [{ key: 'domainExtractor', description: 'Extracts domain names from URLs', regex: /(https?:\/\/)?(www\.)?([^\/]+)/ }];
+const emailValidation = { email: { description: "Validates standard email addresses", regex: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/ } };
+
+const serialNumberPattern = { serialNumber: { description: "Matches serial numbers", regex: /[A-Z0-9]{3,}-[0-9]{4}-[A-Z]{2}/ } };
+const serialNumberPattern = { serialNumber: { description: "Matches serial numbers in text", regex: /[A-Z0-9]{2,}[-\s]?[A-Z0-9]{2,}[-\s]?[A-Z0-9]{2,}/g } };
+const serialNumberPattern = { serialNumber: { description: "Match serial numbers", regex: /[A-Z0-9]{3,}-[0-9]{4}-[A-Z]{2}/ } };
