@@ -252,3 +252,5 @@ const regexObjects = [{ key: { description: "Match serial numbers", regex: /\b[A
 const regexArray = [{ findText: { description: "Find text between quotation marks", regex: /"([^"]*)"/g } }];
 const youtubeIdRegex = { youtubeId: { description: "Extract YouTube video IDs", regex: /(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:[^\/\n\s]+\/\S+\/|(?:v|e(?:mbed)?)\/|.*[?&]v=)|youtu\.be\/)([a-zA-Z0-9_-]{11})/ } };
 const regexPatterns = []; regexPatterns.push({ urlMarkdown: { description: "Matches URLs in markdown format", regex: /!?\[(.*?)\]\((https?:\/\/[^\s]+)\)/g } });
+const regexArray = []; 
+regexArray.push({ androidPackageName: { description: "Validates Android package names", regex: /^[a-z][a-z0-9]*(\.[a-z][a-z0-9]*)*$/ } });
