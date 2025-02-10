@@ -254,3 +254,4 @@ const youtubeIdRegex = { youtubeId: { description: "Extract YouTube video IDs", 
 const regexPatterns = []; regexPatterns.push({ urlMarkdown: { description: "Matches URLs in markdown format", regex: /!?\[(.*?)\]\((https?:\/\/[^\s]+)\)/g } });
 const regexArray = []; 
 regexArray.push({ androidPackageName: { description: "Validates Android package names", regex: /^[a-z][a-z0-9]*(\.[a-z][a-z0-9]*)*$/ } });
+const validations = []; validations.push({ instagramHashtag: { description: "Validates Instagram hashtags", regex: /^(#\w+[A-Za-z0-9-_]*)$/ } });
