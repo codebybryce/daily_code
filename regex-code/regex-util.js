@@ -257,3 +257,5 @@ regexArray.push({ androidPackageName: { description: "Validates Android package 
 const validations = []; validations.push({ instagramHashtag: { description: "Validates Instagram hashtags", regex: /^(#\w+[A-Za-z0-9-_]*)$/ } });
 const regexArray = []; 
 regexArray.push({ headerTags: { description: "Matches HTML header tags (h1 to h6)", regex: /<h[1-6]>.*?<\/h[1-6]>/gi } });
+const githubRepoNameValidator = { githubRepoName: { description: "Validates GitHub repository names (alphanumeric, hyphens, underscores; 100 characters max)", regex: /^(?!-)[a-zA-Z0-9-_]{1,100}(?<!-)$/
+} };
