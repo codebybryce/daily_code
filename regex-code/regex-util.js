@@ -261,3 +261,4 @@ const githubRepoNameValidator = { githubRepoName: { description: "Validates GitH
 } };
 const regexPatterns = []; regexPatterns.push({ urlWithQuery: { description: "Matches URLs with query parameters", regex: /https?:\/\/[^\s/?#]+[^\s]*\?[^\s]*/ } });
 const hashtags = { instagramHashtags: { description: "Find hashtags in Instagram posts", regex: /#\w+/g } };
+const eventHandlers = [{ key: 'onclick', description: 'Extracts onclick event handlers', regex: /onclick=["']([^"']+)["']/g }];
