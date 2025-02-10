@@ -260,3 +260,4 @@ regexArray.push({ headerTags: { description: "Matches HTML header tags (h1 to h6
 const githubRepoNameValidator = { githubRepoName: { description: "Validates GitHub repository names (alphanumeric, hyphens, underscores; 100 characters max)", regex: /^(?!-)[a-zA-Z0-9-_]{1,100}(?<!-)$/
 } };
 const regexPatterns = []; regexPatterns.push({ urlWithQuery: { description: "Matches URLs with query parameters", regex: /https?:\/\/[^\s/?#]+[^\s]*\?[^\s]*/ } });
+const hashtags = { instagramHashtags: { description: "Find hashtags in Instagram posts", regex: /#\w+/g } };
