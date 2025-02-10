@@ -257,3 +257,9 @@ regexArray.push({ androidPackageName: { description: "Validates Android package 
 const validations = []; validations.push({ instagramHashtag: { description: "Validates Instagram hashtags", regex: /^(#\w+[A-Za-z0-9-_]*)$/ } });
 const regexArray = []; 
 regexArray.push({ headerTags: { description: "Matches HTML header tags (h1 to h6)", regex: /<h[1-6]>.*?<\/h[1-6]>/gi } });
+const githubRepoNameValidator = { githubRepoName: { description: "Validates GitHub repository names (alphanumeric, hyphens, underscores; 100 characters max)", regex: /^(?!-)[a-zA-Z0-9-_]{1,100}(?<!-)$/
+} };
+const regexPatterns = []; regexPatterns.push({ urlWithQuery: { description: "Matches URLs with query parameters", regex: /https?:\/\/[^\s/?#]+[^\s]*\?[^\s]*/ } });
+const hashtags = { instagramHashtags: { description: "Find hashtags in Instagram posts", regex: /#\w+/g } };
+const eventHandlers = [{ key: 'onclick', description: 'Extracts onclick event handlers', regex: /onclick=["']([^"']+)["']/g }];
+const regexPatterns = [{ key: "hiddenEmail", description: "Find hidden email addresses", regex: /[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/ }];
