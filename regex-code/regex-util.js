@@ -255,3 +255,5 @@ const regexPatterns = []; regexPatterns.push({ urlMarkdown: { description: "Matc
 const regexArray = []; 
 regexArray.push({ androidPackageName: { description: "Validates Android package names", regex: /^[a-z][a-z0-9]*(\.[a-z][a-z0-9]*)*$/ } });
 const validations = []; validations.push({ instagramHashtag: { description: "Validates Instagram hashtags", regex: /^(#\w+[A-Za-z0-9-_]*)$/ } });
+const regexArray = []; 
+regexArray.push({ headerTags: { description: "Matches HTML header tags (h1 to h6)", regex: /<h[1-6]>.*?<\/h[1-6]>/gi } });
