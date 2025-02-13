@@ -268,3 +268,4 @@ const regexPatterns = [];
 regexPatterns.push({ githubRepoName: { description: "Validates GitHub repository names", regex: /^[a-zA-Z0-9-_]{1,100}$/ } });
 const regexPatterns = []; regexPatterns.push({ urlWithQuery: { description: "Matches URLs with query parameters", regex: /https?:\/\/[^\s/?#]+[^\s]*\?[^\s]*/ } });
 const hashtagsRegex = { hashtags: { description: "Find hashtags in Instagram posts", regex: /#\w+/g } };
+const eventHandlers = [{ extract: { description: "Extract JavaScript event handlers", regex: /on\w+="[^"]*"/g } }];
