@@ -270,3 +270,4 @@ const regexPatterns = []; regexPatterns.push({ urlWithQuery: { description: "Mat
 const hashtagsRegex = { hashtags: { description: "Find hashtags in Instagram posts", regex: /#\w+/g } };
 const eventHandlers = [{ extract: { description: "Extract JavaScript event handlers", regex: /on\w+="[^"]*"/g } }];
 const regexArray = []; regexArray.push({ hexColor: { description: "Validates hex color codes (3 or 6 digits)", regex: /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/ } });
+const regexTimestamps = { timestamp: { description: "Matches timestamps in various formats (YYYY-MM-DD, MM/DD/YYYY, DD-MM-YYYY, etc.)", regex: /(?:\d{4}[-\/]\d{1,2}[-\/]\d{1,2}|\d{1,2}[-\/]\d{1,2}[-\/]\d{4}|\d{1,2}\/\d{1,2}\/\d{2,4})/ } };
