@@ -272,3 +272,4 @@ const eventHandlers = [{ extract: { description: "Extract JavaScript event handl
 const regexArray = []; regexArray.push({ hexColor: { description: "Validates hex color codes (3 or 6 digits)", regex: /^#([0-9A-Fa-f]{3}|[0-9A-Fa-f]{6})$/ } });
 const regexTimestamps = { timestamp: { description: "Matches timestamps in various formats (YYYY-MM-DD, MM/DD/YYYY, DD-MM-YYYY, etc.)", regex: /(?:\d{4}[-\/]\d{1,2}[-\/]\d{1,2}|\d{1,2}[-\/]\d{1,2}[-\/]\d{4}|\d{1,2}\/\d{1,2}\/\d{2,4})/ } };
 const regexPatterns = [{ tabularData: { description: "Find tabular data in plain text", regex: /(?<=\n|^)((?:\S+\s+)+\S+)(?=\n|$)/g } }];
+const namespaces = [...htmlString.matchAll(/xmlns:([^=]+)="([^"]+)"/g)].map(([_, key, value]) => ({ [key]: { description: `Namespace for ${key}`, regex: new RegExp(value) } }));
