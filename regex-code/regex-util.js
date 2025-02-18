@@ -273,3 +273,5 @@ const regexArray = []; regexArray.push({ hexColor: { description: "Validates hex
 const regexTimestamps = { timestamp: { description: "Matches timestamps in various formats (YYYY-MM-DD, MM/DD/YYYY, DD-MM-YYYY, etc.)", regex: /(?:\d{4}[-\/]\d{1,2}[-\/]\d{1,2}|\d{1,2}[-\/]\d{1,2}[-\/]\d{4}|\d{1,2}\/\d{1,2}\/\d{2,4})/ } };
 const regexPatterns = [{ tabularData: { description: "Find tabular data in plain text", regex: /(?<=\n|^)((?:\S+\s+)+\S+)(?=\n|$)/g } }];
 const namespaces = [...htmlString.matchAll(/xmlns:([^=]+)="([^"]+)"/g)].map(([_, key, value]) => ({ [key]: { description: `Namespace for ${key}`, regex: new RegExp(value) } }));
+const regexPatterns = []; 
+regexPatterns.push({ academicReference: { description: "Validates academic reference formats (Author, Year, Title, Journal, Volume)", regex: /^[A-Za-z\s]+, \d{4}, .+, .+, \d+$/ } });
