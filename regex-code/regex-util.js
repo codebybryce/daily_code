@@ -275,3 +275,4 @@ const regexPatterns = [{ tabularData: { description: "Find tabular data in plain
 const namespaces = [...htmlString.matchAll(/xmlns:([^=]+)="([^"]+)"/g)].map(([_, key, value]) => ({ [key]: { description: `Namespace for ${key}`, regex: new RegExp(value) } }));
 const regexPatterns = []; 
 regexPatterns.push({ academicReference: { description: "Validates academic reference formats (Author, Year, Title, Journal, Volume)", regex: /^[A-Za-z\s]+, \d{4}, .+, .+, \d+$/ } });
+const metadataRegex = { metadata: { description: "Match website metadata tags", regex: /<meta\s+([^>]*?)\s*\/?>/gi } };
