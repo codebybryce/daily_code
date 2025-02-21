@@ -277,3 +277,4 @@ const regexPatterns = [];
 regexPatterns.push({ academicReference: { description: "Validates academic reference formats (Author, Year, Title, Journal, Volume)", regex: /^[A-Za-z\s]+, \d{4}, .+, .+, \d+$/ } });
 const metadataRegex = { metadata: { description: "Match website metadata tags", regex: /<meta\s+([^>]*?)\s*\/?>/gi } };
 const videoFileExtensions = { video: { description: "Matches common video file extensions", regex: /\.(mp4|avi|mov|wmv|flv|mkv|webm|mpeg|mpg|3gp)$/i } };
+const userAgentRegex = { userAgent: { description: "Extract user-agent information from headers", regex: /User-Agent:\s*(.*?)(?=\r?\n)/ } };
