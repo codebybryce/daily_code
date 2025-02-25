@@ -281,3 +281,4 @@ const userAgentRegex = { userAgent: { description: "Extract user-agent informati
 const phoneNumberRegex = { phone: { description: "Match phone number with area codes", regex: /^\(\d{3}\) \d{3}-\d{4}$/ } };
 const qrCodeValidation = { qrCode: { description: "Validates QR code format", regex: /^(https?:\/\/[^\s]+|[\w-]+:[^\s]+|[A-Z0-9]{1,25})$/ } };
 { mathSymbols: { description: "Matches mathematical symbols", regex: /[+\-*/=<>^%&|]/ } }
+const articlesRegex = { articles: { description: "Find references to articles", regex: /(?:article|ref)\s*(?:#|:)?\s*(\d+)/gi } };
