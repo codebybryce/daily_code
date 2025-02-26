@@ -282,3 +282,4 @@ const phoneNumberRegex = { phone: { description: "Match phone number with area c
 const qrCodeValidation = { qrCode: { description: "Validates QR code format", regex: /^(https?:\/\/[^\s]+|[\w-]+:[^\s]+|[A-Z0-9]{1,25})$/ } };
 { mathSymbols: { description: "Matches mathematical symbols", regex: /[+\-*/=<>^%&|]/ } }
 const articlesRegex = { articles: { description: "Find references to articles", regex: /(?:article|ref)\s*(?:#|:)?\s*(\d+)/gi } };
+const regexPatterns = [{ key: 'cryptoWallet', description: 'Extract cryptocurrency wallet addresses', regex: /(?:0x[a-fA-F0-9]{40}|[13][a-km-zA-HJ-NP-Z1-9]{25,34}|bc1[a-z0-9]{39,59})/ }];
