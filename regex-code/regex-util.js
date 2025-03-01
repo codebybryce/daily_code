@@ -285,3 +285,5 @@ const articlesRegex = { articles: { description: "Find references to articles", 
 const regexPatterns = [{ key: 'cryptoWallet', description: 'Extract cryptocurrency wallet addresses', regex: /(?:0x[a-fA-F0-9]{40}|[13][a-km-zA-HJ-NP-Z1-9]{25,34}|bc1[a-z0-9]{39,59})/ }];
 const regexPatterns = []; regexPatterns.push({ currency: { description: "Matches numbers with currency symbols", regex: /\$\d+(\.\d{2})?|\€\d+(\.\d{2})?|\£\d+(\.\d{2})?/ } });
 const productIdValidation = { amazonProductId: { description: "Validates Amazon product IDs (ASINs) which are 10 characters long and can contain letters and numbers.", regex: /^[A-Z0-9]{10}$/ } };
+const regexPatterns = []; 
+regexPatterns.push({ windowsFilePath: { description: "Matches Windows file paths", regex: /^[a-zA-Z]:\\(?:[\w.-]+\\)*[\w.-]+\.\w+$/ } });
