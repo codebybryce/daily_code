@@ -287,3 +287,4 @@ const regexPatterns = []; regexPatterns.push({ currency: { description: "Matches
 const productIdValidation = { amazonProductId: { description: "Validates Amazon product IDs (ASINs) which are 10 characters long and can contain letters and numbers.", regex: /^[A-Z0-9]{10}$/ } };
 const regexPatterns = []; 
 regexPatterns.push({ windowsFilePath: { description: "Matches Windows file paths", regex: /^[a-zA-Z]:\\(?:[\w.-]+\\)*[\w.-]+\.\w+$/ } });
+const fileExtensionsRegex = { fileExtensions: { description: "Find file extensions in file names", regex: /\.(\w+)$/ } };
