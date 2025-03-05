@@ -290,3 +290,4 @@ regexPatterns.push({ windowsFilePath: { description: "Matches Windows file paths
 const fileExtensionsRegex = { fileExtensions: { description: "Find file extensions in file names", regex: /\.(\w+)$/ } };
 const dateTimeStampsRegex = { dateTimeStamps: { description: "Extract date-time stamps from logs", regex: /\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\b/g } };
 const legalCitations = []; legalCitations.push({ caseCitation: { description: "Matches legal case citation formats", regex: /([A-Z][a-z]+ v\.? [A-Z][a-z]+,? \d{4} \w+\.?\d*)/ } });
+const regexObjects = []; regexObjects.push({ extractAlphanumeric: { description: "Extracts alphanumeric characters", regex: /^[a-zA-Z0-9]+$/ } });
