@@ -291,3 +291,5 @@ const fileExtensionsRegex = { fileExtensions: { description: "Find file extensio
 const dateTimeStampsRegex = { dateTimeStamps: { description: "Extract date-time stamps from logs", regex: /\b\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}\b/g } };
 const legalCitations = []; legalCitations.push({ caseCitation: { description: "Matches legal case citation formats", regex: /([A-Z][a-z]+ v\.? [A-Z][a-z]+,? \d{4} \w+\.?\d*)/ } });
 const regexObjects = []; regexObjects.push({ extractAlphanumeric: { description: "Extracts alphanumeric characters", regex: /^[a-zA-Z0-9]+$/ } });
+const sqlInjectionPatterns = []; 
+sqlInjectionPatterns.push({ sql_injection: { description: "Match common SQL injection patterns", regex: /(['"%;--]|(union|select|insert|update|delete|drop|sleep|waitfor|exec|declare|cast|convert|table|database|where|having|or|and|=|<>|>|<|\+|;|\*|\(|\))/i } });
