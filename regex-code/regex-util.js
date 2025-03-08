@@ -294,3 +294,4 @@ const regexObjects = []; regexObjects.push({ extractAlphanumeric: { description:
 const sqlInjectionPatterns = []; 
 sqlInjectionPatterns.push({ sql_injection: { description: "Match common SQL injection patterns", regex: /(['"%;--]|(union|select|insert|update|delete|drop|sleep|waitfor|exec|declare|cast|convert|table|database|where|having|or|and|=|<>|>|<|\+|;|\*|\(|\))/i } });
 const phoneNumberFormats = [{ international: { description: "International phone number format", regex: /^\+?[1-9]\d{1,14}$/ }}];
+const temperatureRegex = { temperature: { description: "Matches temperature values", regex: /-?\d+(\.\d+)?\s?(°[CFK]|Celsius|Fahrenheit|Kelvin)/g } };
