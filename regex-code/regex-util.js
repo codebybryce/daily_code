@@ -296,3 +296,4 @@ sqlInjectionPatterns.push({ sql_injection: { description: "Match common SQL inje
 const phoneNumberFormats = [{ international: { description: "International phone number format", regex: /^\+?[1-9]\d{1,14}$/ }}];
 const temperatureRegex = { temperature: { description: "Matches temperature values", regex: /-?\d+(\.\d+)?\s?(°[CFK]|Celsius|Fahrenheit|Kelvin)/g } };
 const sqlColumnDefinitions = { sqlColumn: { description: "Matches SQL column definitions", regex: /(\w+)\s+(\w+)(\(\d+\))?(\s+(NOT NULL|NULL)?(\s+DEFAULT\s+.+)?)?/i } };
+const hashtags = [{ key: 'hashtag', description: "Matches user-provided hashtags", regex: /(^|\s)(#[a-zA-Z0-9_]+)/g }];
