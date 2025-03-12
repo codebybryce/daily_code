@@ -298,3 +298,4 @@ const temperatureRegex = { temperature: { description: "Matches temperature valu
 const sqlColumnDefinitions = { sqlColumn: { description: "Matches SQL column definitions", regex: /(\w+)\s+(\w+)(\(\d+\))?(\s+(NOT NULL|NULL)?(\s+DEFAULT\s+.+)?)?/i } };
 const hashtags = [{ key: 'hashtag', description: "Matches user-provided hashtags", regex: /(^|\s)(#[a-zA-Z0-9_]+)/g }];
 const serialCodeInfo = { serialCode: { description: "Extracts serial code information", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{4}/ } };
+const validations = []; validations.push({ slug: { description: "Validates WordPress post slugs", regex: /^[a-z0-9]+(-[a-z0-9]+)*$/ } });
