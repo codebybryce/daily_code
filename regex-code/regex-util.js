@@ -299,3 +299,4 @@ const sqlColumnDefinitions = { sqlColumn: { description: "Matches SQL column def
 const hashtags = [{ key: 'hashtag', description: "Matches user-provided hashtags", regex: /(^|\s)(#[a-zA-Z0-9_]+)/g }];
 const serialCodeInfo = { serialCode: { description: "Extracts serial code information", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{4}/ } };
 const validations = []; validations.push({ slug: { description: "Validates WordPress post slugs", regex: /^[a-z0-9]+(-[a-z0-9]+)*$/ } });
+const regexArray = [{ key: 'leadingZeros', description: 'Find all leading zeros in numbers', regex: /^0+/ }];
