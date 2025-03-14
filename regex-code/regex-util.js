@@ -300,3 +300,4 @@ const hashtags = [{ key: 'hashtag', description: "Matches user-provided hashtags
 const serialCodeInfo = { serialCode: { description: "Extracts serial code information", regex: /[A-Z0-9]{3}-[A-Z0-9]{3}-[A-Z0-9]{4}/ } };
 const validations = []; validations.push({ slug: { description: "Validates WordPress post slugs", regex: /^[a-z0-9]+(-[a-z0-9]+)*$/ } });
 const regexArray = [{ key: 'leadingZeros', description: 'Find all leading zeros in numbers', regex: /^0+/ }];
+const weatherDataRegex = { weather: { description: "Extracts weather data", regex: /(?:\b(?:sunny|cloudy|rainy|snowy)\b)\s*\d{1,2}°?\s*(?:\w{2,3})?/gi } };
