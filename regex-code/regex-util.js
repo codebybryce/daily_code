@@ -302,3 +302,4 @@ const validations = []; validations.push({ slug: { description: "Validates WordP
 const regexArray = [{ key: 'leadingZeros', description: 'Find all leading zeros in numbers', regex: /^0+/ }];
 const weatherDataRegex = { weather: { description: "Extracts weather data", regex: /(?:\b(?:sunny|cloudy|rainy|snowy)\b)\s*\d{1,2}°?\s*(?:\w{2,3})?/gi } };
 const regexArray = [{ facebookProfile: { description: "Matches Facebook profile URLs", regex: /(?:https?:\/\/)?(?:www\.)?facebook\.com\/(?:profile\.php\?id=|(?:\w+\.?)+\/?)(\w+)/ } }];
+const appStoreLinkValidator = { appleAppStore: { description: "Validates Apple App Store links", regex: /^(https?:\/\/)?(www\.)?itunes\.apple\.com\/(.*?\/)?id\d+$/ } };
