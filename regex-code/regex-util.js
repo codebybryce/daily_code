@@ -304,3 +304,4 @@ const weatherDataRegex = { weather: { description: "Extracts weather data", rege
 const regexArray = [{ facebookProfile: { description: "Matches Facebook profile URLs", regex: /(?:https?:\/\/)?(?:www\.)?facebook\.com\/(?:profile\.php\?id=|(?:\w+\.?)+\/?)(\w+)/ } }];
 const appStoreLinkValidator = { appleAppStore: { description: "Validates Apple App Store links", regex: /^(https?:\/\/)?(www\.)?itunes\.apple\.com\/(.*?\/)?id\d+$/ } };
 const regexPatterns = [{ key: "extractVisibleText", description: "Extract all visible text from HTML", regex: />([^<]+)</g }];
+const validations = []; validations.push({ tweetLength: { description: "Validates tweet content length (up to 280 characters)", regex: /^.{0,280}$/ } });
