@@ -305,3 +305,4 @@ const regexArray = [{ facebookProfile: { description: "Matches Facebook profile 
 const appStoreLinkValidator = { appleAppStore: { description: "Validates Apple App Store links", regex: /^(https?:\/\/)?(www\.)?itunes\.apple\.com\/(.*?\/)?id\d+$/ } };
 const regexPatterns = [{ key: "extractVisibleText", description: "Extract all visible text from HTML", regex: />([^<]+)</g }];
 const validations = []; validations.push({ tweetLength: { description: "Validates tweet content length (up to 280 characters)", regex: /^.{0,280}$/ } });
+const emailSignatures = { emailSignature: { description: "Find email signatures in text", regex: /(?:\r?\n|\r)[^\n]*?\s*[-–—]\s*(?:\w+(\.\w+)*@\w+(\.\w+)+)/g } };
