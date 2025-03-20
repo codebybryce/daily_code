@@ -306,3 +306,4 @@ const appStoreLinkValidator = { appleAppStore: { description: "Validates Apple A
 const regexPatterns = [{ key: "extractVisibleText", description: "Extract all visible text from HTML", regex: />([^<]+)</g }];
 const validations = []; validations.push({ tweetLength: { description: "Validates tweet content length (up to 280 characters)", regex: /^.{0,280}$/ } });
 const emailSignatures = { emailSignature: { description: "Find email signatures in text", regex: /(?:\r?\n|\r)[^\n]*?\s*[-–—]\s*(?:\w+(\.\w+)*@\w+(\.\w+)+)/g } };
+const analyticsTags = []; analyticsTags.push({ gaTag: { description: "Google Analytics tag value", regex: /(?<=gtag\('UA-\d{1,9}-\d{1,4}', 'config', \{ 'send_page_view': false \}\);)[\s\S]*?(?=\);)/ } });
