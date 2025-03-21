@@ -307,3 +307,5 @@ const regexPatterns = [{ key: "extractVisibleText", description: "Extract all vi
 const validations = []; validations.push({ tweetLength: { description: "Validates tweet content length (up to 280 characters)", regex: /^.{0,280}$/ } });
 const emailSignatures = { emailSignature: { description: "Find email signatures in text", regex: /(?:\r?\n|\r)[^\n]*?\s*[-–—]\s*(?:\w+(\.\w+)*@\w+(\.\w+)+)/g } };
 const analyticsTags = []; analyticsTags.push({ gaTag: { description: "Google Analytics tag value", regex: /(?<=gtag\('UA-\d{1,9}-\d{1,4}', 'config', \{ 'send_page_view': false \}\);)[\s\S]*?(?=\);)/ } });
+const isbnPatterns = []; 
+isbnPatterns.push({ isbn: { description: "Matches ISBN-10 or ISBN-13 formats", regex: /^(?:ISBN(?:-1[03])?:?\s*)?(?=[-0-9 ]{13}|[0-9]{10}$)(?:97[89][- ]?)?[0-9][- ]?[0-9]{3}[- ]?[0-9]{5}[- ]?[0-9]$/ } });
