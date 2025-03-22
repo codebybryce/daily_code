@@ -309,3 +309,4 @@ const emailSignatures = { emailSignature: { description: "Find email signatures 
 const analyticsTags = []; analyticsTags.push({ gaTag: { description: "Google Analytics tag value", regex: /(?<=gtag\('UA-\d{1,9}-\d{1,4}', 'config', \{ 'send_page_view': false \}\);)[\s\S]*?(?=\);)/ } });
 const isbnPatterns = []; 
 isbnPatterns.push({ isbn: { description: "Matches ISBN-10 or ISBN-13 formats", regex: /^(?:ISBN(?:-1[03])?:?\s*)?(?=[-0-9 ]{13}|[0-9]{10}$)(?:97[89][- ]?)?[0-9][- ]?[0-9]{3}[- ]?[0-9]{5}[- ]?[0-9]$/ } });
+const regexPatterns = [{ key: "misspelledURLs", description: "Find misspelled website URLs", regex: /https?:\/\/(?:www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:[\/\w\.-]*)*/ }];
