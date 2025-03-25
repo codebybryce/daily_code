@@ -312,3 +312,4 @@ isbnPatterns.push({ isbn: { description: "Matches ISBN-10 or ISBN-13 formats", r
 const regexPatterns = [{ key: "misspelledURLs", description: "Find misspelled website URLs", regex: /https?:\/\/(?:www\.)?[a-zA-Z0-9-]+\.[a-zA-Z]{2,}(?:[\/\w\.-]*)*/ }];
 const eventDateFormats = [{ eventDate: { description: "Validates event date formats (YYYY-MM-DD or MM/DD/YYYY)", regex: /^(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2}\/\d{4})$/ } }];
 const regexPatterns = []; regexPatterns.push({ version: { description: "Matches app version numbers", regex: /^\d+\.\d+(\.\d+)?(-[a-zA-Z0-9]+)?(\+[a-zA-Z0-9]+)?$/ } });
+const regexPatterns = [{ key: 'trailingCommas', description: 'Find trailing commas in lists', regex: /,\s*([\],})])/g }];
