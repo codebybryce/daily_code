@@ -313,3 +313,4 @@ const regexPatterns = [{ key: "misspelledURLs", description: "Find misspelled we
 const eventDateFormats = [{ eventDate: { description: "Validates event date formats (YYYY-MM-DD or MM/DD/YYYY)", regex: /^(?:\d{4}-\d{2}-\d{2}|\d{2}\/\d{2}\/\d{4})$/ } }];
 const regexPatterns = []; regexPatterns.push({ version: { description: "Matches app version numbers", regex: /^\d+\.\d+(\.\d+)?(-[a-zA-Z0-9]+)?(\+[a-zA-Z0-9]+)?$/ } });
 const regexPatterns = [{ key: 'trailingCommas', description: 'Find trailing commas in lists', regex: /,\s*([\],})])/g }];
+const regexPatterns = [{ gitHubRepo: { description: "Extract repository URLs from GitHub", regex: /https?:\/\/(www\.)?github\.com\/[A-Za-z0-9_-]+\/[A-Za-z0-9_-]+/g } }];
