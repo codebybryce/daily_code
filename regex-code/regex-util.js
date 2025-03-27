@@ -314,3 +314,5 @@ const eventDateFormats = [{ eventDate: { description: "Validates event date form
 const regexPatterns = []; regexPatterns.push({ version: { description: "Matches app version numbers", regex: /^\d+\.\d+(\.\d+)?(-[a-zA-Z0-9]+)?(\+[a-zA-Z0-9]+)?$/ } });
 const regexPatterns = [{ key: 'trailingCommas', description: 'Find trailing commas in lists', regex: /,\s*([\],})])/g }];
 const regexPatterns = [{ gitHubRepo: { description: "Extract repository URLs from GitHub", regex: /https?:\/\/(www\.)?github\.com\/[A-Za-z0-9_-]+\/[A-Za-z0-9_-]+/g } }];
+const validationRules = []; 
+validationRules.push({ expiryDate: { description: "Validates credit card expiry dates in MM/YY format", regex: /^(0[1-9]|1[0-2])\/?([0-9]{2})$/ } });
