@@ -316,3 +316,4 @@ const regexPatterns = [{ key: 'trailingCommas', description: 'Find trailing comm
 const regexPatterns = [{ gitHubRepo: { description: "Extract repository URLs from GitHub", regex: /https?:\/\/(www\.)?github\.com\/[A-Za-z0-9_-]+\/[A-Za-z0-9_-]+/g } }];
 const validationRules = []; 
 validationRules.push({ expiryDate: { description: "Validates credit card expiry dates in MM/YY format", regex: /^(0[1-9]|1[0-2])\/?([0-9]{2})$/ } });
+const regexPatterns = []; regexPatterns.push({ alphanumeric: { description: "Matches all alphanumeric words", regex: /\b\w+\b/g } });
