@@ -317,3 +317,4 @@ const regexPatterns = [{ gitHubRepo: { description: "Extract repository URLs fro
 const validationRules = []; 
 validationRules.push({ expiryDate: { description: "Validates credit card expiry dates in MM/YY format", regex: /^(0[1-9]|1[0-2])\/?([0-9]{2})$/ } });
 const regexPatterns = []; regexPatterns.push({ alphanumeric: { description: "Matches all alphanumeric words", regex: /\b\w+\b/g } });
+const operations = [{ findMathOps: { description: "Find mathematical operations", regex: /\b\d+(\s*[\+\-\*\/]\s*\d+)+\b/g } }];
