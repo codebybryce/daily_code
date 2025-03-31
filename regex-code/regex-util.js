@@ -319,3 +319,4 @@ validationRules.push({ expiryDate: { description: "Validates credit card expiry 
 const regexPatterns = []; regexPatterns.push({ alphanumeric: { description: "Matches all alphanumeric words", regex: /\b\w+\b/g } });
 const operations = [{ findMathOps: { description: "Find mathematical operations", regex: /\b\d+(\s*[\+\-\*\/]\s*\d+)+\b/g } }];
 const mediaFileRegex = { mediaFile: { description: "Extract media file names from URLs", regex: /(?:\/|^)([^\/]+\.(?:jpg|jpeg|png|gif|mp3|mp4|wav|avi|mov|mkv))$/i } };
+const regexPatterns = [{ key: "specificWords", description: "Matches lines containing specific words", regex: /(?:\bword1\b|\bword2\b|\bword3\b)/ }];
