@@ -320,3 +320,4 @@ const regexPatterns = []; regexPatterns.push({ alphanumeric: { description: "Mat
 const operations = [{ findMathOps: { description: "Find mathematical operations", regex: /\b\d+(\s*[\+\-\*\/]\s*\d+)+\b/g } }];
 const mediaFileRegex = { mediaFile: { description: "Extract media file names from URLs", regex: /(?:\/|^)([^\/]+\.(?:jpg|jpeg|png|gif|mp3|mp4|wav|avi|mov|mkv))$/i } };
 const regexPatterns = [{ key: "specificWords", description: "Matches lines containing specific words", regex: /(?:\bword1\b|\bword2\b|\bword3\b)/ }];
+const ipRanges = [{ ipRange: { description: "Extract IP address ranges", regex: /(?:\b(?:\d{1,3}\.){3}\d{1,3}\b)(?:\s*-\s*(?:\b(?:\d{1,3}\.){3}\d{1,3}\b))?/ } }];
