@@ -322,3 +322,4 @@ const mediaFileRegex = { mediaFile: { description: "Extract media file names fro
 const regexPatterns = [{ key: "specificWords", description: "Matches lines containing specific words", regex: /(?:\bword1\b|\bword2\b|\bword3\b)/ }];
 const ipRanges = [{ ipRange: { description: "Extract IP address ranges", regex: /(?:\b(?:\d{1,3}\.){3}\d{1,3}\b)(?:\s*-\s*(?:\b(?:\d{1,3}\.){3}\d{1,3}\b))?/ } }];
 const patterns = []; patterns.push({ matchParentheses: { description: "Matches matching pairs of parentheses", regex: /\((?:[^()]*|(?R))*\)/ } });
+const filePathValidation = { filePath: { description: "Validates file paths in configuration files", regex: /^(\/[^\/]+)+\/?$/ } };
