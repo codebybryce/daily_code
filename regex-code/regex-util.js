@@ -323,3 +323,4 @@ const regexPatterns = [{ key: "specificWords", description: "Matches lines conta
 const ipRanges = [{ ipRange: { description: "Extract IP address ranges", regex: /(?:\b(?:\d{1,3}\.){3}\d{1,3}\b)(?:\s*-\s*(?:\b(?:\d{1,3}\.){3}\d{1,3}\b))?/ } }];
 const patterns = []; patterns.push({ matchParentheses: { description: "Matches matching pairs of parentheses", regex: /\((?:[^()]*|(?R))*\)/ } });
 const filePathValidation = { filePath: { description: "Validates file paths in configuration files", regex: /^(\/[^\/]+)+\/?$/ } };
+const timeRanges = { timeRange: { description: "Finds time ranges", regex: /(\b\d{1,2}:\d{2}\s*[APM]{2}|\b\d{1,2}\s*-\s*\d{1,2}:\d{2}\s*[APM]{2}|\b\d{1,2}:\d{2}\s*-\s*\d{1,2}\s*[APM]{2})/g } };
